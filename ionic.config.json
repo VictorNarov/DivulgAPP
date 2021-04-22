@@ -1,0 +1,7 @@
+{
+  "name": "DatosApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

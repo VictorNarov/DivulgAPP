@@ -52,21 +52,11 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col>
-        Texto1
-      </ion-col>
-      <ion-col>
-        Texto2
+      <ion-col *ngFor="let integrante of grupos.integrantes">
+        {{integrante.nombre}}
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col>
-        Texto3
-      </ion-col>
-      <ion-col>
-        Texto4
-      </ion-col>
-    </ion-row>
+
   </ion-grid>
 
 </ion-content>

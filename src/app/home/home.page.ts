@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { map } from "rxjs/operators";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  grupos: any = [];
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    console.log("DATOS");
+    this.getGrupos().subscribe(res => {
+      console.log("RESPUESTA", res);
+      this.grupos = res[0];
+      console.log(this.grupos.integrantes);
+    });
+  }
+
+  getGrupos(){
+    return this.http
+    .get("assets/grupos/plantilla.json")
+    .pipe(
+      map((res:any) => {
+        return res.data;
+      })
+    )
   }
 
 }

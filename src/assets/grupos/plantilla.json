@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "nombreGrupo": "nombre del grupo",
+            "descripcionGrupo": "descripcion del grupo",
+            "contacto" : 
+                {
+                    "email" : "email@email.com",
+                    "telefono" : "123456789",
+                    "direccion" : "av 123"
+                },
+            "integrantes" : [
+                {
+                    "nombre": "Nombre Apellido1",
+                    "status" : "Profesor",
+                    "contacto" : 
+                    {
+                        "email" : "email@email.com",
+                        "telefono" : "123456789",
+                        "direccion" : "av 123"
+                    }
+
+                },
+                {
+                    "nombre": "Nombre Apellido2",
+                    "status" : "Profesor2",
+                    "contacto" : 
+                    {
+                        "email" : "email@email.com",
+                        "telefono" : "123456789",
+                        "direccion" : "av 123"
+                    }
+
+                }  
+            ]
+            
+        }
+    ]
+}

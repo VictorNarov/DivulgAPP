@@ -66,8 +66,8 @@
   /** mycolor **/
   --ion-color-mycolor: #cc0000;
   --ion-color-mycolor-rgb: 204,0,0;
-  --ion-color-mycolor-contrast: #ffffff;
-  --ion-color-mycolor-contrast-rgb: 255,255,255;
+  --ion-color-mycolor-contrast: #dddddd;
+  --ion-color-mycolor-contrast-rgb: 225,225,225;
   --ion-color-mycolor-shade: #b40000;
   --ion-color-mycolor-tint: #d11a1a;
 }

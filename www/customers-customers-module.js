@@ -54,7 +54,7 @@ CustomersPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"mycolor\">\n    <ion-title>customers</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div id=\"container\">\n    <button class=\"btn\" (click)=\"goToHome()\">Go to home</button>\n  </div>\n  \n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar color=\"mycolor\">\r\n    <ion-title>¿Quiénes somos?</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div id=\"container\">\r\n    <button class=\"btn\" (click)=\"goToHome()\">Go to home</button>\r\n  </div>\r\n  \r\n</ion-content>\r\n");
 
 /***/ }),
 

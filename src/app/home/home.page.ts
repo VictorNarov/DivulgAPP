@@ -1,35 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from "rxjs/operators";
+import { map } from 'rxjs/operators';  
+
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
-  grupos: any = [];
+  datos: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
 
-  ngOnInit() {
-    console.log("DATOS");
-    this.getGrupos().subscribe(res => {
-      console.log("RESPUESTA", res);
-      this.grupos = res[0];
-      console.log(this.grupos.integrantes);
-    });
   }
 
-  getGrupos(){
+  ngOnInit(){
+    this.getData().subscribe(res=>
+        this.datos = res
+      )
+  }
+
+  getData(){
     return this.http
-    .get("assets/grupos/plantilla.json")
-    .pipe(
-      map((res:any) => {
-        return res.data;
-      })
-    )
+    .get("assets/group_info_(json)/info.json")
   }
 
 }

@@ -1,0 +1,25 @@
+{
+    "Nombre del grupo": "Sistemas de Visión, Predicción, Optimización y Control",
+    "Descripción del grupo": "Descripción del Grupo de investigación",
+    "Icono del grupo": "",
+
+    "Nombre del despartamento": "Nombre del departamento al que pertenece el grupo",
+    "Descripción del departamento": "Descripción del departamento al que pertenece el grupo",
+    "Icono del departamento": "",
+
+    "Escuela": "Nombre de la Escuela a la que perteneces el departamento",
+    "Descripción de la escuela": "Descripción de la escuela a la que perteneces el departamento",
+    "Icono de la escuela": "",
+
+    "Universidad": "Nombre de la Universidad a la que pertenece la escuela",
+    "Descripción de la universidad": "Descripción de la universidad a la que pertenece la escuela",
+    "Icono de la universidad": "",
+
+    "bloques":[
+        {
+            "tipo": "Tarjeta",
+            "imágen":"",
+            "título":"Trabajos mas relevantes"
+        }
+    ]
+}

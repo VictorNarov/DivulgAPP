@@ -135,6 +135,7 @@ const Content = class {
     this.queued = false;
     this.cTop = -1;
     this.cBottom = -1;
+    this.isMainContent = true;
     // Detail is used in a hot loop in the scroll event, by allocating it here
     // V8 will be able to inline any read/write to it since it's a monomorphic class.
     // https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html
@@ -175,6 +176,9 @@ const Content = class {
      * and start listening from (ionScroll), set this property to `true`.
      */
     this.scrollEvents = false;
+  }
+  connectedCallback() {
+    this.isMainContent = this.el.closest('ion-menu, ion-popover, ion-modal') === null;
   }
   disconnectedCallback() {
     this.onScrollEnd();
@@ -348,9 +352,10 @@ const Content = class {
     }
   }
   render() {
-    const { scrollX, scrollY } = this;
+    const { isMainContent, scrollX, scrollY } = this;
     const mode = Object(_ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
     const forceOverscroll = this.shouldForceOverscroll();
+    const TagType = isMainContent ? 'main' : 'div';
     const transitionShadow = (mode === 'ios' && _ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["c"].getBoolean('experimentalTransitionShadow', true));
     this.resize();
     return (Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: Object(_theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_2__["c"])(this.color, {
@@ -360,12 +365,12 @@ const Content = class {
       }), style: {
         '--offset-top': `${this.cTop}px`,
         '--offset-bottom': `${this.cBottom}px`,
-      } }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "background-content", part: "background" }), Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("main", { class: {
+      } }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "background-content", part: "background" }), Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, { class: {
         'inner-scroll': true,
         'scroll-x': scrollX,
         'scroll-y': scrollY,
         'overscroll': (scrollX || scrollY) && forceOverscroll
-      }, ref: el => this.scrollEl = el, onScroll: (this.scrollEvents) ? ev => this.onScroll(ev) : undefined, part: "scroll" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), transitionShadow ? (Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-effect" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-cover" }), Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-shadow" }))) : null, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "fixed" })));
+      }, ref: (el) => this.scrollEl = el, onScroll: (this.scrollEvents) ? (ev) => this.onScroll(ev) : undefined, part: "scroll" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), transitionShadow ? (Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-effect" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-cover" }), Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "transition-shadow" }))) : null, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "fixed" })));
   }
   get el() { return Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this); }
 };

@@ -1,62 +1,21 @@
-<ion-header>
-
-
-</ion-header>
-
-<ion-content>
-  <ion-item>
-    <ion-label text-wrap>
-      Sistemas de Visión, Predicción, Optimización y Control
-    </ion-label>
-  </ion-item>
+<ion-content [fullscreen]="true">
   
-  <ion-card>
-    <ion-card-header>
-
-    </ion-card-header>
-  
-    <ion-card-content>
-      <img src="https://media.discordapp.net/attachments/372850093587431425/834753974854615040/Computer-vision-Extracting-business-value-from-images.png?width=810&height=450" />
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card href="/projects">
-    
-    <ion-card-header>
-      <ion-card-title>Nuestros proyectos</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      <ion-item>
-        <ion-button href ="/projects" fill="outline" slot="end">Ver</ion-button>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card href="/contact">
-    <ion-item>
-      <ion-icon name="mail" slot="start"></ion-icon>
-      <ion-label>Contacto</ion-label>
-      
-    </ion-item>
-  
-  </ion-card>
-
+  <div>
+    <h1 id="nombre_del_grupo">
+      {{ datos.get(0) }}
+    </h1>
+  </div>
   
 
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col *ngFor="let integrante of grupos.integrantes">
-        {{integrante.nombre}}
-      </ion-col>
-    </ion-row>
-
-  </ion-grid>
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
 
 </ion-content>

@@ -3,31 +3,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-
-  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'customers',
-    loadChildren: () => import('./customers/customers.module').then( m => m.CustomersPageModule)
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
-  {
-    path: 'about',
-    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
-  },
-  {
-    path: 'projects',
-    loadChildren: () => import('./projects/projects.module').then( m => m.ProjectsPageModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
-  }
 ];
 
 @NgModule({
@@ -36,4 +19,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

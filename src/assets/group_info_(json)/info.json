@@ -20,6 +20,11 @@
             "tipo": "Tarjeta",
             "imágen":"",
             "título":"Trabajos mas relevantes"
+        },
+        {
+            "tipo": "Tarjeta",
+            "imágen":"",
+            "título":"Información de contacto"
         }
     ]
 }

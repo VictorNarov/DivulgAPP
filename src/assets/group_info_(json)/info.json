@@ -1,30 +1,73 @@
 {
-    "Nombre del grupo": "Sistemas de Visión, Predicción, Optimización y Control",
-    "Descripción del grupo": "Descripción del Grupo de investigación",
-    "Icono del grupo": "",
-
-    "Nombre del despartamento": "Nombre del departamento al que pertenece el grupo",
-    "Descripción del departamento": "Descripción del departamento al que pertenece el grupo",
-    "Icono del departamento": "",
-
-    "Escuela": "Nombre de la Escuela a la que perteneces el departamento",
-    "Descripción de la escuela": "Descripción de la escuela a la que perteneces el departamento",
-    "Icono de la escuela": "",
-
-    "Universidad": "Nombre de la Universidad a la que pertenece la escuela",
-    "Descripción de la universidad": "Descripción de la universidad a la que pertenece la escuela",
-    "Icono de la universidad": "",
-
-    "bloques":[
+    "Group name": "Sistemas de Visión, Predicción, Optimización y Control",
+    "Group description": "El grupo de investicación esta centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes.",
+    "Group icon": "",
+    "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
+    "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
+    "Department icon": "",
+    "School Name": "Escuela técnica superior de ingeniería",
+    "School description": "",
+    "School icon": "",
+    "University name": "Universidad de Huelva",
+    "University description": "",
+    "University icon": "",
+    "Home": [
         {
-            "tipo": "Tarjeta",
-            "imágen":"",
-            "título":"Trabajos mas relevantes"
+            "type": "Tarjeta",
+            "data": {
+                "image": "projects_image.jpg",
+                "title": "Trabajos mas relevantes",
+                "url": ""
+            }
         },
         {
-            "tipo": "Tarjeta",
-            "imágen":"",
-            "título":"Información de contacto"
+            "type": "Members",
+            "data":{}
+        },
+        {
+            "type": "Tarjeta",
+            "data": {
+                "image": "",
+                "title": "Información de contacto",
+                "url": ""
+            }
+        }
+    ],
+    "Members": [
+        {
+            "Name": "Manuel Emilio Gegundez Árias",
+            "description": "Especialista en visión por computador y deep learning",
+            "phone_number": "959219933",
+            "email": "gegundez@uhu.es",
+            "image": "1.jpg"
+        },
+        {
+            "Name": "Isaac Pérez Borrero",
+            "description": "Especialista en visión por computador y deep learning",
+            "phone_number": "959219933",
+            "email": "isaac.perez@dci.uhu.es",
+            "image": "2.jpg"
+        },
+        {
+            "Name": "Diego Marín Santos",
+            "description": "Especialista en visión por computador y deep learning",
+            "phone_number": " 959217384",
+            "email": "diego.marin@diesia.uhu.es",
+            "image": "3.jpg"
+        },
+        {
+            "Name": "Manuel J. Vasallo Vázquez",
+            "description": "Especialista en optimización y control",
+            "phone_number": "959217376",
+            "email": "manuel.vasallo@diesia.uhu.es",
+            "image": "4.jpg"
+        },
+        {
+            "Name": "Estefanía Cortés Ancos",
+            "description": "Especialista en visión por computador",
+            "phone_number": "959217642",
+            "email": "estefania.cortes@diesia.uhu.es",
+            "image": "5.jpg"
         }
     ]
 }

@@ -1,26 +1,37 @@
 <ion-content [fullscreen]="true">
-  
+
   <ion-object>
-    <h1 id="nombre_del_grupo">
-      {{ datos["Nombre del grupo"] }}
+    <h1 id="group_name">
+      {{ datos["Group name"] }}
     </h1>
   </ion-object>
 
   <ion-object>
-    <p>
-      {{ datos["Descripción del grupo"] }}
+    <p id="group_description">
+      {{ datos["Group description"] }}
     </p>
   </ion-object>
 
-  <ion-list>
-    <ion-object *ngFor="let dato of datos['bloques']">
-      <ion-card *ngIf="dato['tipo'] == 'Tarjeta'">
-        <ion-card-header>
-          <ion-card-title>{{ dato["título"] }}</ion-card-title>
-        </ion-card-header>
-        
-      </ion-card>
-    </ion-object>
-  </ion-list>
+  <ion-object *ngFor="let dato of datos['Home']">
+
+    <ion-card *ngIf="dato['type'] == 'Tarjeta'">
+      <img src="../assets/images/{{ dato['data']['image'] }}" *ngIf="dato['data']['image'] != ''" />
+      <ion-card-header>
+        <ion-card-title id="card_title">{{ dato["data"]["title"] }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <div *ngIf="dato['type'] == 'Members'">
+      <p *ngFor="let member of datos['Members']">Miembro</p>
+    </div>
+
+  </ion-object>
+
+  <video width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+
 
 </ion-content>

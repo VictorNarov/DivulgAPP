@@ -17,15 +17,35 @@
     <ion-card *ngIf="dato['type'] == 'Tarjeta'">
       <img src="../assets/images/{{ dato['data']['image'] }}" *ngIf="dato['data']['image'] != ''" />
       <ion-card-header>
-        <ion-card-title id="card_title">{{ dato["data"]["title"] }}</ion-card-title>
+        <ion-card-title id="card_title">{{ dato.data.title }}</ion-card-title>
       </ion-card-header>
     </ion-card>
 
-    <div *ngIf="dato['type'] == 'Members'">
-      <p *ngFor="let member of datos['Members']">Miembro</p>
-    </div>
+    <ion-object *ngIf="dato.type == 'Members' && dato.visible">
+      <ion-list>
+        <ion-list-header>
+          Miembros
+        </ion-list-header>
+      <ion-object *ngFor="let dato of datos['Members']">
+          <ion-item href="mailto:{{dato.email}}">
+            <ion-avatar slot="start">
+              <img src="../assets/images/{{dato.image}}">
+            </ion-avatar>
+            <ion-label text-wrap>
+              <h2>{{ dato.name }}</h2>
+              <h3>{{dato.description}}</h3>
+              <p>{{dato.email}}</p>
+              <p>{{dato.phone_number}}</p>
+            </ion-label>
+          </ion-item>
+      </ion-object>
+  
+      </ion-list>
+    </ion-object>
 
   </ion-object>
+
+  
 
   <video width="400" controls>
     <source src="mov_bbb.mp4" type="video/mp4">

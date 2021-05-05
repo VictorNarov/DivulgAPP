@@ -1,11 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+ion-content{
+  --ion-background-color: #f1f1f1;
+}
+
+ion-item{
+  --ion-background-color: white;
+}
+
 #group_name{
   text-align: center;
+  margin: 0%;
+  padding-top: 6%;
+  text-shadow:  2px 2px 2px #9e9e9e;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:180%;
+}
+
+#id_grupo{
+  font-size: 200%;
+  margin-bottom: 2%;
+}
+
+ion-card{
+  background-color: white;
+  color:black;
+}
+
+#group_info svg{
+  display: block;
 }
 
 #group_description{
+  margin-top: 2%;
+  font-family: 'Noto Sans KR', sans-serif;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: 20px;
+}
+
+ ion-card hr { 
+  display: block; 
+  height: 2px;
+  border: 0; 
+  border-top: 1px solid rgb(82, 81, 81);
+  margin-top: 0%;
+  padding: 0; 
 
 }
 
@@ -39,4 +79,19 @@
 
 #container a {
   text-decoration: none;
+}
+
+ion-avatar  { 
+  width:100% !important;  
+  height : 100% !important;  
+  max-width: 100px !important;  //any size
+  max-height: 100px !important; //any size 
+}
+
+ion-card ion-list {
+  background-color: white;
+}
+
+.item-background-color{
+  --ion-item-background:white;
 }

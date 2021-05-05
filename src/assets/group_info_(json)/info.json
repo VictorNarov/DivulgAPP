@@ -1,6 +1,6 @@
 {
     "Group name": "Sistemas de Visión, Predicción, Optimización y Control",
-    "Group description": "El grupo de investicación está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes.",
+    "Group description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
     "Group icon": "",
     "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
     "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
@@ -11,6 +11,12 @@
     "University name": "Universidad de Huelva",
     "University description": "",
     "University icon": "",
+    "Group background":{
+        "type":"img",
+        "image":"",
+        "color":"#008bff",
+        "text color":"white"
+    },
     "Home": [
         {
             "type": "Tarjeta",

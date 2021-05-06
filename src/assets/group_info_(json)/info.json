@@ -1,34 +1,31 @@
 {
     "group_name": "Sistemas de Visión, Predicción, Optimización y Control",
     "group_description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
-    "Group icon": "",
+    "group_code" : "TEP-952",
+    "group_icon": "",
     "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
     "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
-    "Department icon": "",
+    "department_icon": "logo-diesia.png",
     "School name": "Escuela técnica superior de ingeniería",
     "School description": "",
-    "School icon": "",
+    "school_icon": "logo-etsi.svg",
     "University name": "Universidad de Huelva",
     "University description": "",
-    "University icon": "",
-    "Group background":{
-        "type":"img",
-        "image":"",
-        "color":"#008bff",
-        "text color":"white"
-    },
+    "university_icon": "logo-uhu.png",
     "Home": [
         {
             "image": "projects_image.jpg",
             "title": "Trabajos más relevantes",
             "url": "projects",
+            "icon":"newspaper",
             "data": ""
             
         },
         {
             "visible": true,
-            "title": "Miembros",
+            "title": "Miembros y contacto",
             "image" : "",
+            "icon" : "people",
             "url": "/members",
             "data": [{
                 "name": "Manuel Emilio Gegundez Árias",
@@ -68,12 +65,10 @@
         },
         {
             "image": "",
+            "icon": "mail",
             "title": "Información de contacto",
             "url": "",
             "data": ""
         }
-    ],
-    "Members": [
-        
     ]
 }

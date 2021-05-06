@@ -9,13 +9,41 @@ ion-item{
   --ion-background-color: white;
 }
 
+.left-icon{
+  position:absolute;
+  left:5%;
+  top:20%;
+  color: #ab0000;
+}
+
+.right-icon{
+  position:absolute;
+  right:5%;
+  top:20%;
+  color: #ab0000;
+}
+
+#card_title{
+  padding-left: 9%;
+}
+
+#group_info{
+  background-image: url("../../assets/images/group_info_background.png");
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  background-position: "center";
+  color: white;
+}
+
 #group_name{
   text-align: center;
   margin: 0%;
   padding-top: 6%;
   text-shadow:  2px 2px 2px #9e9e9e;
   font-family: 'Ubuntu', sans-serif;
-  font-size:180%;
+  font-size:240%;
+  padding-left:5%;
+  padding-right: 5%;
 }
 
 #id_grupo{
@@ -26,6 +54,7 @@ ion-item{
 ion-card{
   background-color: white;
   color:black;
+  margin-bottom: 3%;
 }
 
 ion-card-title{
@@ -52,10 +81,6 @@ ion-card-title{
   margin-top: 0%;
   padding: 0; 
 
-}
-
-#card_title{
-  text-align: center;
 }
 
 #container {

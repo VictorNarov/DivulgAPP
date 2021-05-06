@@ -16,7 +16,8 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title id="card_title">TEP-952</ion-card-title>
+      <ion-card-title id="card_title">{{datos.group_code}}</ion-card-title>
+      <ion-icon name="information-circle" size="large" class="left-icon"></ion-icon>
     </ion-card-header>
     <hr>
     <p id="group_description">
@@ -28,21 +29,24 @@
     <ion-card *ngFor="let dato of datos.Home"  (click)="navigate(dato.url, dato.data)">
       <img class = "img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
       <ion-card-header >
-        <ion-card-title id="card_title">{{ dato.title }}</ion-card-title>
+        <ion-card-title id="card_title">
+          
+          {{ dato.title }}
+        </ion-card-title>
+        <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
+        <ion-icon name="chevron-forward-circle" size="large" class="right-icon" *ngIf="dato.url != ''"></ion-icon>
       </ion-card-header>
+      
     </ion-card>
-<!--     
-    <ion-card (click)="navigate(datos.Home[1].url, datos.Members)"  >
-      <ion-card-header>
-        <ion-card-title id="card_title">{{ datos.Home[1].title }}</ion-card-title>
-      </ion-card-header>
-
-    </ion-card>
-
-      <ion-card-header>
-        <ion-card-title id="card_title">{{ datos.Home[2].title }}</ion-card-title>
-      </ion-card-header>
-
-    </ion-card> -->
-
+    <ion-grid>
+      <ion-row>
+       <img src="../../assets/images/{{datos.department_icon}}" width="100%" height="100%">
+      </ion-row>
+      <ion-row>
+        <img src="../../assets/images/{{datos.school_icon}}" width="100%" height="100%">
+       </ion-row>
+       <ion-row>
+        <img src="../../assets/images/{{datos.university_icon}}" width="100%" height="100%">
+       </ion-row>
+    </ion-grid>
 </ion-content>

@@ -12,7 +12,6 @@ export class MembersPage implements OnInit {
 
   constructor(public route: ActivatedRoute,private router: Router) {
     this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
-    console.log(this.data);
     }
 
   ngOnInit() {

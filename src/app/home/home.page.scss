@@ -9,6 +9,21 @@ ion-item{
   --ion-background-color: white;
 }
 
+.titulo_sobre_imagen{
+  position:absolute;
+  background-color:rgba(255, 255, 255, 0.7);;
+  bottom: 0%;
+  width: 100%;
+  height:25%;
+  max-height: 55px;
+}
+
+.titulo_sobre_imagen ion-card-title{
+  margin-top:3%;
+  margin-left: 2%;
+
+}
+
 .left-icon{
   position:absolute;
   left:5%;
@@ -24,7 +39,7 @@ ion-item{
 }
 
 #card_title{
-  padding-left: 9%;
+  padding-left: 12%;
 }
 
 #group_info{

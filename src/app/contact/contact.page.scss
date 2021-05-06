@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+.map {
+    min-height: 100%;
+  }
+
+#map {
+    min-height: 100%;
+}
+
+  ion-content{
+    --ion-background-color: #f1f1f1;
+  }
+  
+  ion-item{
+    --ion-background-color: white;
+  }
+
+  ion-card{
+    background-color: white;
+  }
+  
+  #card_title{
+    text-align: center;
+    color:black;
+  }
+
+.left-icon{
+  position:absolute;
+  left:5%;
+  top:20%;
+  color: #ab0000;
+}
+
+.right-icon{
+  position:absolute;
+  right:5%;
+  top:20%;
+  color: #ab0000;
+}
+
+#group_description{
+  margin-top: 2%;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  color:black;
+}

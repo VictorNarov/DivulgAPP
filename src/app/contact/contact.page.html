@@ -17,7 +17,7 @@
 
     <div id="map" style="width:100%; height:20rem;"></div>
 
-    <p id="group_description" >{{data.address}}</p>
+    <p id="group_description" *ngFor="let dato of data.address">{{ dato }}</p>
 
 
   </ion-card>

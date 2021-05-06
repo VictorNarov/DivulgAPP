@@ -8,7 +8,7 @@
     "department_icon": "logo-diesia.png",
     "School name": "Escuela técnica superior de ingeniería",
     "School description": "",
-    "school_icon": "logo-etsi.jpg",
+    "school_icon": "logo-etsi.png",
     "University name": "Universidad de Huelva",
     "University description": "",
     "university_icon": "logo-uhu.png",
@@ -71,7 +71,9 @@
             "icon": "location",
             "url": "contact",
             "data": {
-                "address" : "Despacho 1, Módulo 3, Planta 3, Departamento de Matemáticas, Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen) , Avda. 3 de marzo s/n, 21071 - Huelva",
+                "address" :[
+                 "Despacho 1, Módulo 3, Planta 3, Departamento de Matemáticas", "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)" , "Avda. 3 de marzo s/n, 21071 - Huelva"
+                ],
                 "phone_number" : "(+34) 654211545",
                 "email" : "gegundez@uhu.es",
                 "map" : {

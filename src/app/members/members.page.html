@@ -10,10 +10,6 @@
 <ion-content *ngIf="data">
 
   <ion-card>
-    <ion-card-header>
-      <ion-card-title id="card_title">Miembros</ion-card-title>
-    </ion-card-header>
-    <hr>
     <ion-list inset=true>
       <ion-item *ngFor="let miembro of data">
         <ion-item href="mailto:{{miembro.email}}">

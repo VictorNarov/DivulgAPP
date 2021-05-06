@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';  
+import { filter, map } from 'rxjs/operators';  
+import { Observable } from 'rxjs';
+import { Router, NavigationStart, NavigationExtras, } from '@angular/router';
 
 
 @Component({
@@ -9,10 +11,10 @@ import { map } from 'rxjs/operators';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  appstate$: Observable<object>;
   datos: any;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
 
   }
 
@@ -31,6 +33,17 @@ export class HomePage {
       }
     }
     )
+
+
+    
+      this.appstate$ = this.router.events.pipe(
+        filter(e => e instanceof NavigationStart),
+        map(() => {
+          const currentState = this.router.getCurrentNavigation();
+          return currentState.extras.state;
+        })
+      );
+    
   }
 
   getData(){
@@ -38,4 +51,14 @@ export class HomePage {
     .get("assets/group_info_(json)/info.json")
   }
 
+  navigate(page, dataP) {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        data: dataP
+      }
+    };
+    this.router.navigate([page], { 
+      state: { goToMembers:  navigationExtras}
+    });
+  }
 }

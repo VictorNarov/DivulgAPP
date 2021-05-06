@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>members</ion-title>
-  </ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Miembros</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="data">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="card_title">Miembros</ion-card-title>
+    </ion-card-header>
+    <hr>
+    <ion-list inset=true>
+      <ion-item *ngFor="let miembro of data">
+        <ion-item href="mailto:{{miembro.email}}">
+          <ion-avatar slot="start">
+            <img src="../assets/images/{{miembro.image}}">
+          </ion-avatar>
+          <ion-label text-wrap>
+            <h2>{{ miembro.name }}</h2>
+            <h3>{{miembro.description}}</h3>
+            <p>{{miembro.email}}</p>
+            <p>{{miembro.phone_number}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-item>
+
+    </ion-list>
+  </ion-card>
+
+
 
 </ion-content>

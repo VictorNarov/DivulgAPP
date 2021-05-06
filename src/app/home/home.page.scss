@@ -28,6 +28,11 @@ ion-card{
   color:black;
 }
 
+ion-card-title{
+  color:black;
+}
+
+
 #group_info svg{
   display: block;
 }
@@ -94,4 +99,10 @@ ion-card ion-list {
 
 .item-background-color{
   --ion-item-background:white;
+}
+
+.img-center{
+  width: auto;
+  margin: auto;
+  display: block;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+// Receive Parameter
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-members',
   templateUrl: './members.page.html',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersPage implements OnInit {
 
-  constructor() { }
+  data: any;
+
+  constructor(public route: ActivatedRoute,private router: Router) {
+    this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
+    console.log(this.data);
+    }
 
   ngOnInit() {
+    //console.log(this.data);
   }
+
+
 
 }

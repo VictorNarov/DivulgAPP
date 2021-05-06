@@ -1,6 +1,6 @@
 {
-    "Group name": "Sistemas de Visión, Predicción, Optimización y Control",
-    "Group description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
+    "group_name": "Sistemas de Visión, Predicción, Optimización y Control",
+    "group_description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
     "Group icon": "",
     "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
     "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
@@ -19,61 +19,61 @@
     },
     "Home": [
         {
-            "type": "Tarjeta",
-            "data": {
-                "image": "projects_image.jpg",
-                "title": "Trabajos más relevantes",
-                "url": ""
-            }
+            "image": "projects_image.jpg",
+            "title": "Trabajos más relevantes",
+            "url": "projects",
+            "data": ""
+            
         },
         {
-            "type": "Members",
-            "visible": true
+            "visible": true,
+            "title": "Miembros",
+            "image" : "",
+            "url": "/members",
+            "data": [{
+                "name": "Manuel Emilio Gegundez Árias",
+                "description": "Especialista en visión por computador y deep learning",
+                "phone_number": "959219933",
+                "email": "gegundez@uhu.es",
+                "image": "1.jpg"
+            },
+            {
+                "name": "Isaac Pérez Borrero",
+                "description": "Especialista en visión por computador y deep learning",
+                "phone_number": "959219933",
+                "email": "isaac.perez@dci.uhu.es",
+                "image": "2.jpg"
+            },
+            {
+                "name": "Diego Marín Santos",
+                "description": "Especialista en visión por computador y deep learning",
+                "phone_number": " 959217384",
+                "email": "diego.marin@diesia.uhu.es",
+                "image": "3.jpg"
+            },
+            {
+                "name": "Manuel J. Vasallo Vázquez",
+                "description": "Especialista en optimización y control",
+                "phone_number": "959217376",
+                "email": "manuel.vasallo@diesia.uhu.es",
+                "image": "4.jpg"
+            },
+            {
+                "name": "Estefanía Cortés Ancos",
+                "description": "Especialista en visión por computador",
+                "phone_number": "959217642",
+                "email": "estefania.cortes@diesia.uhu.es",
+                "image": "5.jpg"
+            }]
         },
         {
-            "type": "Tarjeta",
-            "data": {
-                "image": "",
-                "title": "Información de contacto",
-                "url": ""
-            }
+            "image": "",
+            "title": "Información de contacto",
+            "url": "",
+            "data": ""
         }
     ],
     "Members": [
-        {
-            "name": "Manuel Emilio Gegundez Árias",
-            "description": "Especialista en visión por computador y deep learning",
-            "phone_number": "959219933",
-            "email": "gegundez@uhu.es",
-            "image": "1.jpg"
-        },
-        {
-            "name": "Isaac Pérez Borrero",
-            "description": "Especialista en visión por computador y deep learning",
-            "phone_number": "959219933",
-            "email": "isaac.perez@dci.uhu.es",
-            "image": "2.jpg"
-        },
-        {
-            "name": "Diego Marín Santos",
-            "description": "Especialista en visión por computador y deep learning",
-            "phone_number": " 959217384",
-            "email": "diego.marin@diesia.uhu.es",
-            "image": "3.jpg"
-        },
-        {
-            "name": "Manuel J. Vasallo Vázquez",
-            "description": "Especialista en optimización y control",
-            "phone_number": "959217376",
-            "email": "manuel.vasallo@diesia.uhu.es",
-            "image": "4.jpg"
-        },
-        {
-            "name": "Estefanía Cortés Ancos",
-            "description": "Especialista en visión por computador",
-            "phone_number": "959217642",
-            "email": "estefania.cortes@diesia.uhu.es",
-            "image": "5.jpg"
-        }
+        
     ]
 }

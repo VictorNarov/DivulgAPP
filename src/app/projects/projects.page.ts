@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// Receive Parameter
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.page.scss'],
 })
 export class ProjectsPage implements OnInit {
+  
+  data: any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.data = params['data']});
   }
+
+
 
 }

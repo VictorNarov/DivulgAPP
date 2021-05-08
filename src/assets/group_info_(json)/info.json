@@ -14,6 +14,82 @@
     "university_icon": "logo-uhu.png",
     "Home": [
         {
+            "title": "Líneas de investigación",
+            "visible": true,
+            "image": "",
+            "url": "",
+            "icon": "newspaper",
+            "data": [
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Detección de fallos en sistemas dinámicos",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas",
+                                    "automáticos que detecten posibles fallos de funcionamiento en sistemas industriales. Se investiga la",
+                                    "posibilidad de utilizar tanto modelos de los sistemas tratados, como históricos de datos pasados de",
+                                    "dichos sistemas. La detección de fallo es un primer paso para la diagnosis concreta del fallo que se ha",
+                                    "producido. Los fallos también se pueden ver como falta de coherencia o consistencia en un sistema."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Diseño y desarrollo de sistemas de automatización y control",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas automáticos de control aplicables principalmente en la industria.",
+                                "Se investiga la posibilidad de utilizar tanto sistemas clásicos de control, como aquellos basados en modelo, así como ",
+                                "sistemas de control para procesos industriales de tipo discreto. El grupo también desarrolla su actividad",
+                                "en el campo del modelado y la simulación, que son tareas importantes en el desarrollo de sistemas de control."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Predicción, control y optimización de sistemas de energía renovable.",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Los sistemas de energía renovable necesitan ser viables técnica y económicamente para poder competir con las fuentes convencionales de energía. Una de las herramientas que permitiría alcanzar dicha capacidad es la Ingeniería de Sistemas. En consecuencia, diversas técnicas de predicción, control y optimización pueden aplicarse en estos sistemas en busca del objetivo mencionado."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Diseño y desarrollo de sistemas de estimación y predicción",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Desarrollo de nuevos métodos de estimación de estados, estimación de parámetros o modelos. Dado un conjunto de datos de cierto sistema o proceso, la línea de investigación se centra en proponer nuevos métodos que proporcionen valores aproximados de ciertos parámetros o estados de sistemas. Las principales aplicaciones de estos métodos son el modelado de sistemas y la predicción de comportamientos futuros."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Visión artificial / tratamiento digital de imágenes",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                   "Diseño e implementación de algoritmos para análisis de imágenes digitales. El objetivo de esta línea es realizar investigación básica, desarrollo y transferencia de tecnologías relacionadas con el procesamiento digital de imágenes y vídeo. Los campos de aplicación en los que esta línea juega un papel principal son muy variados: detección y diagnóstico de enfermedades a través de imágenes médicas, detección y seguimiento, automatización de procesos, control de calidad e inspección, robótica, sistemas de seguridad, identificación y reconocimiento, análisis de imágenes tomadas por satélite, etc."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Trabajos más relevantes",
             "visible": true,
             "image": "projects_image.jpg",
@@ -49,6 +125,7 @@
                 }
             ]
         },
+        
         {
             "title": "Miembros y contacto",
             "visible": true,

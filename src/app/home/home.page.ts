@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { filter, map } from 'rxjs/operators';  
 import { Observable } from 'rxjs';
 import { Router, NavigationStart, NavigationExtras, } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class HomePage {
   appstate$: Observable<object>;
   datos: any;
 
-  constructor(private http: HttpClient, private router: Router) {
+  constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer) {
 
   }
 
@@ -51,5 +52,22 @@ export class HomePage {
     this.router.navigate([page], { 
       state: { goToMembers:  navigationExtras}
     });
+  }
+
+
+  visibility(id){
+    if(document.getElementById(id).style.visibility == "hidden"){
+      document.getElementById(id).style.visibility="visible";
+      document.getElementById(id).style.position="static";
+      document.getElementById(id+"-icon").setAttribute("name","chevron-down-outline")
+    }else{
+      document.getElementById(id).style.visibility="hidden";
+      document.getElementById(id).style.position="absolute";
+      document.getElementById(id+"-icon").setAttribute("name","chevron-forward-outline")
+    }
+  }
+
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }

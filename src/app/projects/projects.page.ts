@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 // Receive Parameter
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -11,11 +11,26 @@ export class ProjectsPage implements OnInit {
   
   data: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute,private router: Router) {
+    this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
+   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
-      this.data = params['data']});
+
+  }
+
+  visibility(id){
+    if(document.getElementById(id).style.visibility == "hidden"){
+      document.getElementById(id).style.visibility="visible";
+      document.getElementById(id).style.position="static";
+      document.getElementById(id+"-hr").style.visibility="visible";
+      document.getElementById(id+"-hr").style.position="static";
+    }else{
+      document.getElementById(id).style.visibility="hidden";
+      document.getElementById(id).style.position="absolute";
+      document.getElementById(id+"-hr").style.visibility="hidden";
+      document.getElementById(id+"-hr").style.position="absolute";
+    }
   }
 
 

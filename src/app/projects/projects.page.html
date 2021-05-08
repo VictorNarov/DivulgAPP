@@ -4,9 +4,29 @@
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title>Proyectos</ion-title>
-    </ion-toolbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="data">
+  <ion-card *ngFor="let dato of data">
+    <div (click)="visibility(dato.title)">
+      <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+      <ion-card-header>
+        <ion-card-title id="card_title">
+          {{ dato.title }}
+        </ion-card-title>
+      </ion-card-header>
+
+      <hr id="{{ dato.title }}-hr" style="visibility: hidden; position:absolute;">
+
+      <div *ngFor="let content of dato.content" id="{{dato.title}}" style="visibility: hidden; position: absolute;">
+        <div *ngIf="content.type == 'text' ">
+          <p *ngFor="let paragraph of content.data">
+            {{paragraph}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </ion-card>
 
 </ion-content>

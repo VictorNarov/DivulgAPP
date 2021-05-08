@@ -17,9 +17,22 @@
             "title": "Trabajos más relevantes",
             "visible" : true,
             "image": "projects_image.jpg",
-            "url": "projects",
+            "url": "/projects",
             "icon":"newspaper",
-            "data": ""
+            "data": [{
+                "image":"projects_image.jpg",
+                "title":"Agrobot",
+                "content":[
+                    {
+                        "type":"text",
+                        "data":["p1","p2","p3"]
+                    },{
+                        "type":"video",
+                        "data":""
+                    }
+                ]
+
+            }]
             
         },
         {

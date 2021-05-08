@@ -1,8 +1,31 @@
 ion-card hr { 
-    height: 2px;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0px 0px 2px;
     border: 0; 
-    border-top: 1px solid rgb(82, 81, 81);
-    margin-top: 0%;
-    padding: 0; 
-  
+    border-bottom: 1px solid rgb(165, 165, 165);
+  }
+
+  .right-icon{
+    position:absolute;
+    right:5%;
+    top:12px;
+    color: #ab0000;
+  }
+
+  #video{
+    width: 90%;
+    margin-left:5%
+  }
+
+  .texto{
+    padding-left: 16px;
+    padding-right:16px;
+    color:black;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .div-button{
+    text-align: center;
   }

@@ -1,7 +1,7 @@
 {
     "group_name": "Sistemas de Visión, Predicción, Optimización y Control",
     "group_description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
-    "group_code" : "TEP-952",
+    "group_code": "TEP-952",
     "group_icon": "",
     "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
     "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
@@ -15,84 +15,102 @@
     "Home": [
         {
             "title": "Trabajos más relevantes",
-            "visible" : true,
+            "visible": true,
             "image": "projects_image.jpg",
             "url": "/projects",
-            "icon":"newspaper",
-            "data": [{
-                "image":"projects_image.jpg",
-                "title":"Agrobot",
-                "content":[
-                    {
-                        "type":"text",
-                        "data":["p1","p2","p3"]
-                    },{
-                        "type":"video",
-                        "data":""
-                    }
-                ]
-
-            }]
-            
+            "icon": "newspaper",
+            "data": [
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Agrobot",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tenía como objetivo la implementación de un dispositivo portátil para el reconocimiento de la madurez de fresas a partir de la captura de imágenes y derivó en la concesión de una patente de invención.",
+                                "El dispositivo patentado ha sido implementado en los prototipos de cosechadoras de fresas de Agrobot S.L. y se encuentra en explotación por parte de esta empresa."
+                            ]
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://www.youtube.com/embed/NM9Op5RKbhk"
+                        },
+                        {
+                            "type": "text",
+                            "data": [
+                                "Mediante el análisis de imágenes en tiempo real, el dispositivo localiza de forma precisa las fresas presentes mediante la extracción de características propias del fruto (forma, color, tamaño,...) y determina su grado de madurez mediante un análisis basado en color. Todo este proceso se hace de forma paralela e independiente en cada una de las cámaras situadas en los brazos del sistema robótico."
+                            ]
+                        },{
+                            "type":"button",
+                            "data":"https://doi.org/10.1016/j.compag.2020.105736",
+                            "text":"Ver artículo"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "Miembros y contacto",
             "visible": true,
-            "image" : "",
-            "icon" : "people",
+            "image": "",
+            "icon": "people",
             "url": "/members",
-            "data": [{
-                "name": "Manuel Emilio Gegundez Árias",
-                "description": "Especialista en visión por computador y deep learning",
-                "phone_number": "959219933",
-                "email": "gegundez@uhu.es",
-                "image": "1.jpg"
-            },
-            {
-                "name": "Isaac Pérez Borrero",
-                "description": "Especialista en visión por computador y deep learning",
-                "phone_number": "959219933",
-                "email": "isaac.perez@dci.uhu.es",
-                "image": "2.jpg"
-            },
-            {
-                "name": "Diego Marín Santos",
-                "description": "Especialista en visión por computador y deep learning",
-                "phone_number": " 959217384",
-                "email": "diego.marin@diesia.uhu.es",
-                "image": "3.jpg"
-            },
-            {
-                "name": "Manuel J. Vasallo Vázquez",
-                "description": "Especialista en optimización y control",
-                "phone_number": "959217376",
-                "email": "manuel.vasallo@diesia.uhu.es",
-                "image": "4.jpg"
-            },
-            {
-                "name": "Estefanía Cortés Ancos",
-                "description": "Especialista en visión por computador",
-                "phone_number": "959217642",
-                "email": "estefania.cortes@diesia.uhu.es",
-                "image": "5.jpg"
-            }]
+            "data": [
+                {
+                    "name": "Manuel Emilio Gegundez Árias",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "959219933",
+                    "email": "gegundez@uhu.es",
+                    "image": "1.jpg"
+                },
+                {
+                    "name": "Isaac Pérez Borrero",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "959219933",
+                    "email": "isaac.perez@dci.uhu.es",
+                    "image": "2.jpg"
+                },
+                {
+                    "name": "Diego Marín Santos",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": " 959217384",
+                    "email": "diego.marin@diesia.uhu.es",
+                    "image": "3.jpg"
+                },
+                {
+                    "name": "Manuel J. Vasallo Vázquez",
+                    "description": "Especialista en optimización y control",
+                    "phone_number": "959217376",
+                    "email": "manuel.vasallo@diesia.uhu.es",
+                    "image": "4.jpg"
+                },
+                {
+                    "name": "Estefanía Cortés Ancos",
+                    "description": "Especialista en visión por computador",
+                    "phone_number": "959217642",
+                    "email": "estefania.cortes@diesia.uhu.es",
+                    "image": "5.jpg"
+                }
+            ]
         },
         {
             "title": "Encuéntranos",
-            "visible" : true,
+            "visible": true,
             "image": "",
             "icon": "location",
             "url": "contact",
             "data": {
-                "address" :[
-                 "Despacho 1, Módulo 3, Planta 3, Departamento de Matemáticas", "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)" , "Avda. 3 de marzo s/n, 21071 - Huelva"
+                "address": [
+                    "Despacho 1, Módulo 3, Planta 3, Departamento de Matemáticas",
+                    "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)",
+                    "Avda. 3 de marzo s/n, 21071 - Huelva"
                 ],
-                "phone_number" : "(+34) 654211545",
-                "email" : "gegundez@uhu.es",
-                "map" : {
-                    "visible" : true,
-                    "lat" : "37.271080",
-                    "lon" : "-6.925962"
+                "phone_number": "(+34) 654211545",
+                "email": "gegundez@uhu.es",
+                "map": {
+                    "visible": true,
+                    "lat": "37.271080",
+                    "lon": "-6.925962"
                 }
             }
         }

@@ -11,22 +11,38 @@
   <ion-card *ngFor="let dato of data">
     <div (click)="visibility(dato.title)">
       <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+
       <ion-card-header>
+
         <ion-card-title id="card_title">
           {{ dato.title }}
         </ion-card-title>
+
+        <ion-icon id ="{{ dato.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
       </ion-card-header>
 
-      <hr id="{{ dato.title }}-hr" style="visibility: hidden; position:absolute;">
-
-      <div *ngFor="let content of dato.content" id="{{dato.title}}" style="visibility: hidden; position: absolute;">
-        <div *ngIf="content.type == 'text' ">
-          <p *ngFor="let paragraph of content.data">
-            {{paragraph}}
-          </p>
-        </div>
-      </div>
     </div>
+
+      <div id="{{ dato.title }}" style="visibility: hidden; position:absolute;">
+
+        <hr>
+
+        <div *ngFor="let content of dato.content">
+          <div *ngIf="content.type == 'text' ">
+            <p class="texto" *ngFor="let paragraph of content.data">
+              {{paragraph}}
+            </p>
+          </div>
+          <div *ngIf="content.type == 'video' ">
+            <iframe id="video" [src]="transform(content.data)"></iframe>
+          </div>
+          <div *ngIf="content.type == 'button' " id="div-button">
+            <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+          </div>
+        </div>
+
+      </div>
+
   </ion-card>
 
 </ion-content>

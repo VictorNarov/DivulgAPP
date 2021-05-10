@@ -116,7 +116,32 @@
                             "data": [
                                 "Mediante el análisis de imágenes en tiempo real, el dispositivo localiza de forma precisa las fresas presentes mediante la extracción de características propias del fruto (forma, color, tamaño,...) y determina su grado de madurez mediante un análisis basado en color. Todo este proceso se hace de forma paralela e independiente en cada una de las cámaras situadas en los brazos del sistema robótico."
                             ]
-                        },{
+                        },
+                        {
+                            "type":"button",
+                            "data":"https://doi.org/10.1016/j.compag.2020.105736",
+                            "text":"Ver artículo"
+                        }
+                    ]
+                },
+                {
+                    "image": "retinopatia.jpg",
+                    "title": "Diagnóstico precoz de retinopatía diabética a partir de retinografías",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "En este trabajo, se ha implementado un prototipo de sistema automático de detección de Retinopatía Diabética. El sistema procesa retinografías, imágenes retinales de fondo de ojo, para detectar y localizar patologías asociadas con la enfermedad (microaneurismas, hemorragias y exudados). Esta tarea requiere una identificación previa de los componentes anatómicos de la retina, como son el disco óptico, la fóvea y el árbol vascular."
+                            ]
+
+                        },
+                        {
+                            "type": "text",
+                            "data": [
+                                "El diagnóstico de la enfermedad se realiza en base al número y distribución de las lesiones detectadas, según se establece en las escalas y clasificaciones internacionales propuestas por expertos y definidas en los protocolos médicos. De esta forma, el sistema puede ser utilizado por el especialista como herramienta de apoyo a la detección precoz esta enfermedad."
+                            ]
+                        },
+                        {
                             "type":"button",
                             "data":"https://doi.org/10.1016/j.compag.2020.105736",
                             "text":"Ver artículo"

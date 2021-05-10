@@ -45,47 +45,65 @@
       <ion-icon name="chevron-forward-circle" size="large" class="right-icon" *ngIf="dato.url != ''"></ion-icon>
     </div>
 
-    <div (click)="visibility(dato.title)" *ngIf="dato.url == ''">
-      <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+<!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
+    <div *ngIf="dato.url == ''">
+      <div (click)="visibility(dato.title)">
+        <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
-      <ion-card-header>
+          <ion-card-header>
 
-        <ion-card-title id="card_title">
-          {{ dato.title }}
-        </ion-card-title>
+            <ion-card-title id="card_title">
+              {{ dato.title }}
+            </ion-card-title>
 
-        <ion-icon id ="{{ dato.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
-      </ion-card-header>
+            <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
+            <ion-icon id ="{{ dato.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
+          </ion-card-header>
+      </div>
+      <div id="{{dato.title}}" style="visibility: hidden; position:absolute;">
+      <!-- CONTENIDO LINEAS DE INVESTIGACION -->
+        <div (click)="visibility(linea.title)" *ngFor="let linea of dato.data">
+            <img class="img-center" src="../assets/images/{{ linea.image }}" *ngIf="linea.image != ''" />
 
-    </div>
+            <ion-card-header>
 
-    <div id="{{ dato.title }}" style="visibility: hidden; position:absolute;"  *ngIf="dato.url == ''">
+              <ion-card-title id="card_title">
+                {{ linea.title }}
+              </ion-card-title>
 
-      <hr>
-      <div *ngFor="let content of dato.content">
-        <div *ngIf="content.type == 'text' ">
-          <p class="texto" *ngFor="let paragraph of content.data">
-            {{paragraph}}
-          </p>
-        </div>
-        <div *ngIf="content.type == 'video' ">
-          <iframe id="video" [src]="transform(content.data)"></iframe>
-        </div>
-        <div *ngIf="content.type == 'button' " id="div-button">
-          <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+              <ion-icon id ="{{ linea.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
+            </ion-card-header>
+        
+
+            <div id="{{ linea.title }}" style="visibility: hidden; position:absolute;">
+
+              <hr>
+              <div *ngFor="let content of linea.content">
+                <div *ngIf="content.type == 'text' ">
+                  <p class="texto" *ngFor="let paragraph of content.data">
+                    {{paragraph}}
+                  </p>
+                </div>
+                <div *ngIf="content.type == 'video' ">
+                  <iframe id="video" [src]="transform(content.data)"></iframe>
+                </div>
+                <div *ngIf="content.type == 'button' " id="div-button">
+                  <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+                </div>
+              </div>
+        
+            </div>
+
         </div>
       </div>
-
     </div>
-  
-    
-
-
-
 
 
 
   </ion-card>
+
+
+
   <ion-grid>
     <ion-row>
 

@@ -18,10 +18,10 @@
             "visible": true,
             "image": "",
             "url": "",
-            "icon": "newspaper",
+            "icon": "rocket",
             "data": [
                 {
-                    "image": "projects_image.jpg",
+                    "image": "",
                     "title": "Detección de fallos en sistemas dinámicos",
                     "content": [
                         {
@@ -37,7 +37,7 @@
                     ]
                 },
                 {
-                    "image": "projects_image.jpg",
+                    "image": "",
                     "title": "Diseño y desarrollo de sistemas de automatización y control",
                     "content": [
                         {
@@ -52,7 +52,7 @@
                     ]
                 },
                 {
-                    "image": "projects_image.jpg",
+                    "image": "",
                     "title": "Predicción, control y optimización de sistemas de energía renovable.",
                     "content": [
                         {
@@ -64,7 +64,7 @@
                     ]
                 },
                 {
-                    "image": "projects_image.jpg",
+                    "image": "",
                     "title": "Diseño y desarrollo de sistemas de estimación y predicción",
                     "content": [
                         {
@@ -76,7 +76,7 @@
                     ]
                 },
                 {
-                    "image": "projects_image.jpg",
+                    "image": "",
                     "title": "Visión artificial / tratamiento digital de imágenes",
                     "content": [
                         {

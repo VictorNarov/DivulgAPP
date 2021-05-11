@@ -27,11 +27,10 @@
                         {
                             "type": "text",
                             "data": [
-                                "La línea de investigación se centra en proponer sistemas",
-                                    "automáticos que detecten posibles fallos de funcionamiento en sistemas industriales. Se investiga la",
-                                    "posibilidad de utilizar tanto modelos de los sistemas tratados, como históricos de datos pasados de",
-                                    "dichos sistemas. La detección de fallo es un primer paso para la diagnosis concreta del fallo que se ha",
-                                    "producido. Los fallos también se pueden ver como falta de coherencia o consistencia en un sistema."
+                                "La línea de investigación se centra en proponer sistemas automáticos que detecten posibles fallos de funcionamiento en sistemas industriales.",
+                                 "Se investiga la posibilidad de utilizar tanto modelos de los sistemas tratados, como históricos de datos pasados de dichos sistemas.",
+                                 "La detección de fallo es un primer paso para la diagnosis concreta del fallo que se ha producido.",
+                                 "Los fallos también se pueden ver como falta de coherencia o consistencia en un sistema."
                             ]
                         }
                     ]
@@ -58,7 +57,9 @@
                         {
                             "type": "text",
                             "data": [
-                                "Los sistemas de energía renovable necesitan ser viables técnica y económicamente para poder competir con las fuentes convencionales de energía. Una de las herramientas que permitiría alcanzar dicha capacidad es la Ingeniería de Sistemas. En consecuencia, diversas técnicas de predicción, control y optimización pueden aplicarse en estos sistemas en busca del objetivo mencionado."
+                                "Los sistemas de energía renovable necesitan ser viables técnica y económicamente para poder competir con las fuentes convencionales de energía.",
+                                "Una de las herramientas que permitiría alcanzar dicha capacidad es la Ingeniería de Sistemas.",
+                                "En consecuencia, diversas técnicas de predicción, control y optimización pueden aplicarse en estos sistemas en busca del objetivo mencionado."
                             ]
                         }
                     ]
@@ -70,7 +71,8 @@
                         {
                             "type": "text",
                             "data": [
-                                "Desarrollo de nuevos métodos de estimación de estados, estimación de parámetros o modelos. Dado un conjunto de datos de cierto sistema o proceso, la línea de investigación se centra en proponer nuevos métodos que proporcionen valores aproximados de ciertos parámetros o estados de sistemas. Las principales aplicaciones de estos métodos son el modelado de sistemas y la predicción de comportamientos futuros."
+                                "Dado un conjunto de datos de cierto sistema o proceso, la línea de investigación se centra en proponer nuevos métodos que proporcionen valores aproximados de ciertos parámetros o estados de sistemas.", 
+                                "Las principales aplicaciones de estos métodos son el modelado de sistemas y la predicción de comportamientos futuros."
                             ]
                         }
                     ]
@@ -82,7 +84,8 @@
                         {
                             "type": "text",
                             "data": [
-                                   "Diseño e implementación de algoritmos para análisis de imágenes digitales. El objetivo de esta línea es realizar investigación básica, desarrollo y transferencia de tecnologías relacionadas con el procesamiento digital de imágenes y vídeo. Los campos de aplicación en los que esta línea juega un papel principal son muy variados: detección y diagnóstico de enfermedades a través de imágenes médicas, detección y seguimiento, automatización de procesos, control de calidad e inspección, robótica, sistemas de seguridad, identificación y reconocimiento, análisis de imágenes tomadas por satélite, etc."
+                                   "El objetivo de esta línea es realizar investigación básica, desarrollo y transferencia de tecnologías relacionadas con el procesamiento digital de imágenes y vídeo.",
+                                   "Los campos de aplicación en los que esta línea juega un papel principal son muy variados: detección y diagnóstico de enfermedades a través de imágenes médicas, detección y seguimiento, automatización de procesos, control de calidad e inspección, robótica, sistemas de seguridad, identificación y reconocimiento, análisis de imágenes tomadas por satélite, etc."
                             ]
                         }
                     ]
@@ -143,7 +146,7 @@
                         },
                         {
                             "type":"button",
-                            "data":"https://doi.org/10.1016/j.compag.2020.105736",
+                            "data":"https://jamanetwork.com/journals/jama/fullarticle/2588763?utm_campaign=articlePDF&utm_medium=articlePDFlink&utm_source=articlePDF&utm_content=jama.2016.17216",
                             "text":"Ver artículo"
                         }
                     ]

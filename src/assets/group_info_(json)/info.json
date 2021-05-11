@@ -95,7 +95,7 @@
         {
             "title": "Trabajos más relevantes",
             "visible": true,
-            "image": "projects_image.jpg",
+            "image": "",
             "url": "/projects",
             "icon": "newspaper",
             "data": [
@@ -149,6 +149,50 @@
                             "data":"https://jamanetwork.com/journals/jama/fullarticle/2588763?utm_campaign=articlePDF&utm_medium=articlePDFlink&utm_source=articlePDF&utm_content=jama.2016.17216",
                             "text":"Ver artículo"
                         }
+                    ]
+                },
+                {
+                    "image": "torrent-closures.jpg",
+                    "title": "Sistema de visión artificial para el control de la calidad de impresión industrial en imágenes (Torrent Closures S.L.)",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tiene como objetivo el desarrollo e implementación de un sistema de visión para el control de la calidad de un proceso de impresión sobre láminas metálicas.",
+                                "De forma específica, se realizan las siguientes actuaciones:",
+                                "1. Establecimiento de requisitos y especificaciones técnicas del sistema de visión: cámaras, fuente de iluminación, hardware.",
+                                "2. Implementación del proceso de comunicación cámara-ordenador para la generación de las imágenes a analizar.",
+                                "3. Implementación de algoritmos de visión que permitan establecer la calidad de las impresiones.",
+                                "4. Realización de una interfaz de usuario para la utilización del sistema."
+                                    ]
+
+                        },
+                        {
+                            "type":"image",
+                            "data":"torrent-closures-2.jpg"
+
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://docs.google.com/file/d/17r0wvZOgGAWq8RUOgqyd8TOFnVtSy5Ut/preview"
+
+                        }
+                    ]
+                },
+                {
+                    "image": "chron.jpg",
+                    "title": "Herramienta de apoyo al especialista en la valoración de la enfermedad de Crohn (Consejería de Salud).",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "El objetivo principal es el desarrollo de una herramienta informática basada en visión artificial que sirva de apoyo al especialista en la labor de revisión de imágenes capturadas por cápsula endoscópica (CE) para la valoración de la enfermedad de Crohn (EC).",
+                                "A modo de referencia, se puede citar que el tiempo medio de captura de imágenes en una prueba de CE se sitúa en unas 8 horas, con una velocidad de captura que puede oscilar entre 2 y 6 imágenes por segundo. Estos datos implican que el médico tenga que revisar por encima de las 60.000 imágenes en la valoración por CE de la EC en un paciente.",
+                                "La herramienta indicará al especialista aquellas imágenes que debería analizar por presentar indicios de lesiones compatibles con la enfermedad.",
+                                "Para ello, se utilizan técnicas de procesamiento digital de imágenes y deep learning para detectar aquellas imágenes afectadas por las lesiones ulcerosas características de la enfermedad."
+                                    ]
+
+                        }  
                     ]
                 }
             ]

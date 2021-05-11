@@ -36,8 +36,11 @@
           <div *ngIf="content.type == 'video' ">
             <iframe id="video" [src]="transform(content.data)"></iframe>
           </div>
-          <div *ngIf="content.type == 'button' " id="div-button">
+          <div *ngIf="content.type == 'button' " class="div-button">
             <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+          </div>
+          <div *ngIf="content.type == 'image' ">
+            <img id="image" src="../assets/images/{{content.data}}">
           </div>
         </div>
 

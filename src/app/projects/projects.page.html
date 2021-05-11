@@ -10,11 +10,10 @@
 <ion-content *ngIf="data">
   <ion-card *ngFor="let dato of data">
     <div (click)="visibility(dato.title)">
-      <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
-
+      <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" class="header-image"/>
       <ion-card-header>
 
-        <ion-card-title id="card_title">
+        <ion-card-title class="card-title">
           {{ dato.title }}
         </ion-card-title>
 
@@ -34,13 +33,13 @@
             </p>
           </div>
           <div *ngIf="content.type == 'video' ">
-            <iframe id="video" [src]="transform(content.data)"></iframe>
+            <iframe class="video" [src]="transform(content.data)" allowfullscreen></iframe>
           </div>
           <div *ngIf="content.type == 'button' " class="div-button">
-            <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+            <ion-button color="base-color" href=" {{content.data }} ">{{content.text}}</ion-button>
           </div>
           <div *ngIf="content.type == 'image' ">
-            <img id="image" src="../assets/images/{{content.data}}">
+            <img class="image" src="../assets/images/{{content.data}}">
           </div>
         </div>
 

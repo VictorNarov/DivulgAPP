@@ -70,4 +70,10 @@ export class HomePage {
   transform(url) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
+
+  onResize(event) {
+  console.log("Hola")
 }
+}
+
+

@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true" *ngIf="datos">
+<ion-content [fullscreen]="true" *ngIf="datos" (window:resize)="onResize($event)">
 
   <div id="group_info">
     <h1 id="group_name">
@@ -8,7 +8,7 @@
       <path fill="#ffffff" fill-opacity="1"
         d="M0,256L80,261.3C160,267,320,277,480,250.7C640,224,800,160,960,154.7C1120,149,1280,203,1360,229.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
-      <path fill="#f1f1f1" fill-opacity="1"
+      <path fill="#e0e0e0" fill-opacity="1"
         d="M0,256L80,261.3C160,267,320,277,480,250.7C640,224,800,160,960,154.7C1120,149,1280,203,1360,229.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>
@@ -16,7 +16,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title id="card_title">{{datos.group_code}}</ion-card-title>
+      <ion-card-title class="card_title">{{datos.group_code}}</ion-card-title>
       <ion-icon name="information-circle" size="large" class="left-icon"></ion-icon>
     </ion-card-header>
     <hr>
@@ -30,7 +30,7 @@
     <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
     <ion-card-header *ngIf="dato.image == '' && dato.url != ''">
-      <ion-card-title id="card_title">
+      <ion-card-title class="card_title">
         {{ dato.title }}
       </ion-card-title>
       <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
@@ -38,62 +38,62 @@
     </ion-card-header>
 
     <div class="titulo_sobre_imagen" *ngIf="dato.image != '' && dato.url != ''">
-      <ion-card-title id="card_title">
+      <ion-card-title class="card_title">
         {{ dato.title }}
       </ion-card-title>
       <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
       <ion-icon name="chevron-forward-circle" size="large" class="right-icon" *ngIf="dato.url != ''"></ion-icon>
     </div>
 
-<!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
+    <!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
     <div *ngIf="dato.url == ''">
       <div (click)="visibility(dato.title)">
         <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
-          <ion-card-header>
+        <ion-card-header>
 
-            <ion-card-title id="card_title">
-              {{ dato.title }}
-            </ion-card-title>
+          <ion-card-title class="card_title">
+            {{ dato.title }}
+          </ion-card-title>
 
-            <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
-            <ion-icon id ="{{ dato.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
-          </ion-card-header>
+          <ion-icon name="{{dato.icon}}" size="large" class="left-icon"></ion-icon>
+          <ion-icon id="{{ dato.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon">
+          </ion-icon>
+        </ion-card-header>
       </div>
       <div id="{{dato.title}}" style="visibility: hidden; position:absolute;">
-      <!-- CONTENIDO LINEAS DE INVESTIGACION -->
-        <div (click)="visibility(linea.title)" *ngFor="let linea of dato.data">
-            <img class="img-center" src="../assets/images/{{ linea.image }}" *ngIf="linea.image != ''" />
+        <hr>
+        <!-- CONTENIDO LINEAS DE INVESTIGACION -->
+        <div (click)="visibility(linea.title)" *ngFor="let linea of dato.data; last as isLast">
 
-            <ion-card-header>
+          <ion-card-header>
 
-              <ion-card-title id="card_title">
-                {{ linea.title }}
-              </ion-card-title>
+            <ion-card-title class="card_sub_title">
+              {{ linea.title }}
+            </ion-card-title>
+            <ion-icon id="{{ linea.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon" ></ion-icon>
+          </ion-card-header>
 
-              <ion-icon id ="{{ linea.title }}-icon" name="chevron-forward-outline" size="large" class="right-icon"></ion-icon>
-            </ion-card-header>
-        
 
-            <div id="{{ linea.title }}" style="visibility: hidden; position:absolute;">
+          <div id="{{ linea.title }}" style="visibility: hidden; position:absolute;">
 
-              <hr>
-              <div *ngFor="let content of linea.content">
-                <div *ngIf="content.type == 'text' ">
-                  <p class="texto" *ngFor="let paragraph of content.data">
-                    {{paragraph}}
-                  </p>
-                </div>
-                <div *ngIf="content.type == 'video' ">
-                  <iframe id="video" [src]="transform(content.data)"></iframe>
-                </div>
-                <div *ngIf="content.type == 'button' " id="div-button">
-                  <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
-                </div>
+            <hr>
+            <div *ngFor="let content of linea.content">
+              <div *ngIf="content.type == 'text' ">
+                <p class="texto" *ngFor="let paragraph of content.data">
+                  {{paragraph}}
+                </p>
               </div>
-        
+              <div *ngIf="content.type == 'video' ">
+                <iframe id="video" [src]="transform(content.data)"></iframe>
+              </div>
+              <div *ngIf="content.type == 'button' " id="div-button">
+                <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
+              </div>
             </div>
 
+          </div>
+          <hr *ngIf="!isLast">
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
         <img src="../../assets/images/{{datos.school_icon}}">
       </ion-col>
       <ion-col>
-        <ion-row >
+        <ion-row>
           <img src="../../assets/images/{{datos.department_icon}}">
         </ion-row>
         <ion-row>

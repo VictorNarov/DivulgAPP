@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 ion-content{
-  --ion-background-color: #f1f1f1;
+  --ion-background-color: #e0e0e0;
 }
 
 ion-item{
@@ -31,19 +31,26 @@ ion-row img{
 .left-icon{
   position:absolute;
   left:20px;
-  top:20%;
+  top:calc(50% - 16px);
   color: #ab0000;
 }
 
 .right-icon{
   position:absolute;
-  right:5%;
-  top:12px;
+  right:10px;
+  top:calc(50% - 16px);
   color: #ab0000;
 }
 
-#card_title{
+.card_title{
   padding-left: 40px;
+  color:black;
+  width:90%;
+}
+
+.card_sub_title{
+  color:black;
+  width:90%;
 }
 
 #group_info{
@@ -165,18 +172,8 @@ ion-footer p{
 }
 
 ion-card hr { 
-  margin: 0;
-  width: 100%;
-  box-shadow: 0px 0px 2px;
   border: 0; 
   border-bottom: 1px solid rgb(165, 165, 165);
-}
-
-.right-icon{
-  position:absolute;
-  right:5%;
-  top:12px;
-  color: #ab0000;
 }
 
 #video{
@@ -195,4 +192,3 @@ ion-card hr {
 .div-button{
   text-align: center;
 }
-

@@ -194,6 +194,21 @@
 
                         }  
                     ]
+                },
+                {
+                    "image": "autobuses.jpg",
+                    "title": "Diseño de un modelo de asignación de personal para una empresa de transporte interurbano (Damas, S.A.)",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "El proyecto consiste en la planificación automática de turnos de trabajo para un conjunto de conductores encargados de varias rutas de transporte en la provincia de Huelva.",
+                                "El reparto de turnos debe respetar ciertas restricciones como son un máximo de horas de trabajo por día, un número de días libres a la semana, un máximo de horas extras, etc.",
+                                "El objetivo de la optimización es encontrar un reparto lo más uniforme posible en las horas de trabajo de los conductores. El problema fue abordado con optimización entera mixta."
+                                    ]
+
+                        }  
+                    ]
                 }
             ]
         },

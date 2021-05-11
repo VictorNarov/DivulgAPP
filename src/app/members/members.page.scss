@@ -1,6 +1,19 @@
+ion-content{
+  --ion-background-color: #e0e0e0;
+}
+
+ion-item{
+  --ion-background-color: white;
+}
+
+
 ion-avatar  { 
     width:100% !important;  
     height : 100% !important;  
     max-width: 80px !important;  //any size
     max-height: 80px !important; //any size 
+  }
+
+  .contact-row{
+    text-align:center;
   }

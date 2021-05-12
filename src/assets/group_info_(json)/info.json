@@ -223,14 +223,14 @@
                 {
                     "name": "Manuel Emilio Gegundez Árias",
                     "description": "Especialista en visión por computador y deep learning",
-                    "phone_number": "959219933",
+                    "phone_number": "959219931",
                     "email": "gegundez@uhu.es",
                     "image": "1.jpg"
                 },
                 {
                     "name": "Isaac Pérez Borrero",
                     "description": "Especialista en visión por computador y deep learning",
-                    "phone_number": "959219933",
+                    "phone_number": "959217675",
                     "email": "isaac.perez@dci.uhu.es",
                     "image": "2.jpg"
                 },
@@ -265,11 +265,11 @@
             "url": "contact",
             "data": {
                 "address": [
-                    "Despacho 1, Módulo 3, Planta 3, Departamento de Matemáticas",
+                    "Despacho 1, Módulo 3, Planta 3, Departamento de ciencias integradas",
                     "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)",
                     "Avda. 3 de marzo s/n, 21071 - Huelva"
                 ],
-                "phone_number": "(+34) 654211545",
+                "phone_number": " (+34) 959219931",
                 "email": "gegundez@uhu.es",
                 "map": {
                     "visible": true,

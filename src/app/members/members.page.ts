@@ -9,9 +9,11 @@ import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 export class MembersPage implements OnInit {
 
   data: any;
+  folder: string
 
   constructor(public route: ActivatedRoute,private router: Router) {
     this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
+    this.folder = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.folder
     }
 
   ngOnInit() {

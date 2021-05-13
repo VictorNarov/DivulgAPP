@@ -12,12 +12,14 @@ import "leaflet/dist/images/marker-icon-2x.png";
 })
 export class ContactPage implements OnInit {
 
-   data: any;
+   data: any
+   folder: string
    map: Map
 
 
   constructor(public route: ActivatedRoute,private router: Router) {
-    this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
+    this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data
+    this.folder = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.folder
     }
 
 

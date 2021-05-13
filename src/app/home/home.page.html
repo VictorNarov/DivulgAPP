@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar position="top">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="index"></ion-back-button>
     </ion-buttons>
@@ -36,7 +36,7 @@
 
 
   <ion-card *ngFor="let dato of datos.Home" (click)="navigate(dato.url, dato.data)">
-    <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+    <img class="img-center" src="../assets/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
     <ion-card-header *ngIf="dato.image == '' && dato.url != ''">
       <ion-card-title class="card_title">
@@ -57,7 +57,7 @@
     <!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
     <div *ngIf="dato.url == ''">
       <div (click)="visibility(dato.title)">
-        <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+        <img class="img-center" src="../assets/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
         <ion-card-header>
 
@@ -117,14 +117,14 @@
     <ion-row>
 
       <ion-col>
-        <img src="../../assets/images/{{datos.school_icon}}">
+        <img src="../../assets/{{datos.folder}}/images/{{datos.school_icon}}">
       </ion-col>
       <ion-col>
         <ion-row>
-          <img src="../../assets/images/{{datos.department_icon}}">
+          <img src="../../assets/{{datos.folder}}/images/{{datos.department_icon}}">
         </ion-row>
         <ion-row>
-          <img src="../../assets/images/{{datos.university_icon}}" style="padding-top:20px;">
+          <img src="../../assets/images/logo-uhu.png" style="padding-top:20px;">
         </ion-row>
       </ion-col>
     </ion-row>

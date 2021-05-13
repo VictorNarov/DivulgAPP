@@ -13,10 +13,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class ProjectsPage implements OnInit {
   
-  data: any;
+  data: any
+  folder: string
 
   constructor(public route: ActivatedRoute,private router: Router,public sanitizer: DomSanitizer) {
     this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;
+    this.folder = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.folder
    }
 
   ngOnInit() {

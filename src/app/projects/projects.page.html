@@ -10,7 +10,7 @@
 <ion-content *ngIf="data">
   <ion-card *ngFor="let dato of data">
     <div (click)="visibility(dato.title)">
-      <img class="img-center" src="../assets/images/{{ dato.image }}" *ngIf="dato.image != ''" class="header-image"/>
+      <img class="img-center" src="../assets/{{this.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" class="header-image"/>
       <ion-card-header>
 
         <ion-card-title class="card-title">
@@ -39,7 +39,7 @@
             <ion-button color="base-color" href=" {{content.data }} ">{{content.text}}</ion-button>
           </div>
           <div *ngIf="content.type == 'image' ">
-            <img class="image" src="../assets/images/{{content.data}}">
+            <img class="image" src="../assets/{{this.folder}}/images/{{content.data}}">
           </div>
         </div>
 

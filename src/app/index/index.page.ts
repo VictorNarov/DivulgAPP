@@ -4,6 +4,7 @@ import { filter, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { Router, NavigationStart, NavigationExtras, } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SlicePipe } from '@angular/common';
 @Component({
   selector: 'app-index',
   templateUrl: './index.page.html',
@@ -38,6 +39,14 @@ export class IndexPage implements OnInit {
     .get("assets/index.json")
   }
 
+
+
+  ionViewDidEnter(){
+    if(document.getElementById('footer').getBoundingClientRect().y < window.innerHeight-200){
+      setTimeout(() => { document.getElementById('footer').style.marginTop ="calc("+(window.innerHeight - document.getElementById('footer').getBoundingClientRect().y) + "px - 3rem)"; }, 200); 
+    }
+  }
+
   getData(directories){
     console.log(directories.data)
     for(let i in directories.data){
@@ -62,7 +71,5 @@ export class IndexPage implements OnInit {
       state: { goToMembers:  navigationExtras}
     });
   }
-
-
 
 }

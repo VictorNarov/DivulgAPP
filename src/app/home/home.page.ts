@@ -5,11 +5,10 @@ import { Observable } from 'rxjs';
 import { Router, NavigationStart, NavigationExtras, } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  styleUrls: ['home.page.scss']
 })
 export class HomePage {
   appstate$: Observable<object>;
@@ -39,6 +38,7 @@ export class HomePage {
       );
     
   }
+
 
   getData(){
     return this.http

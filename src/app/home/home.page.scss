@@ -192,3 +192,13 @@ ion-card hr {
 .div-button{
   text-align: center;
 }
+
+ion-toolbar{
+  width:50px;
+  position:fixed;
+  border-radius: 0px 0px 25px 0px;
+}
+
+ion-toolbar ion-buttons{
+  margin-left: 0;
+}

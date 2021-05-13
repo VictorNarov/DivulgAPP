@@ -16,15 +16,17 @@ export class HomePage {
   datos: any;
 
   constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer) {
+    
+    this.datos = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data
 
   }
 
   ngOnInit(){
-    this.getData().subscribe(res=>{
-      this.datos = res;
+    // this.getData().subscribe(res=>{
+    //   this.datos = res;
     
-    }
-    )
+    // }
+    //)
 
 
     

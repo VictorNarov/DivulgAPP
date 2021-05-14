@@ -56,7 +56,6 @@ export class IndexPage implements OnInit {
       //console.log(directory)
       this.http.get(this.url+"/"+directory+"/"+directory+".json").subscribe((res: JSON) => {
         this.data.push(res);
-        alert(directory)
         //console.log(this.data);
       });
 

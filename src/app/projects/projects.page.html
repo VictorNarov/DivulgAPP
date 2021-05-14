@@ -10,7 +10,7 @@
 <ion-content *ngIf="data">
   <ion-card *ngFor="let dato of data">
     <div (click)="visibility(dato.title)">
-      <img class="img-center" [src]="{{url}}/{{folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" class="header-image"/>
+      <img class="img-center" src="{{url}}/{{folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" class="header-image"/>
       <ion-card-header>
 
         <ion-card-title class="card-title">
@@ -33,13 +33,13 @@
             </p>
           </div>
           <div *ngIf="content.type == 'video' ">
-            <iframe class="video" [src]="transform(content.data)" allowfullscreen></iframe>
+            <iframe class="video" src="transform(content.data)" allowfullscreen></iframe>
           </div>
           <div *ngIf="content.type == 'button' " class="div-button">
             <ion-button color="base-color" href=" {{content.data }} ">{{content.text}}</ion-button>
           </div>
           <div *ngIf="content.type == 'image' ">
-            <img class="image" [src]="{{url}}/{{folder}}/images/{{content.data}}">
+            <img class="image" src="{{url}}/{{folder}}/images/{{content.data}}">
           </div>
         </div>
 

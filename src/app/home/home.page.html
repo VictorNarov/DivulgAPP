@@ -35,7 +35,7 @@
 
 
   <ion-card *ngFor="let dato of datos.Home" (click)="navigate(dato.url, dato.data)">
-    <img class="img-center" [src]="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+    <img class="img-center" src="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
     <ion-card-header *ngIf="dato.image == '' && dato.url != ''">
       <ion-card-title class="card_title">
@@ -56,7 +56,7 @@
     <!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
     <div *ngIf="dato.url == ''">
       <div (click)="visibility(dato.title)">
-        <img class="img-center" [src]="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+        <img class="img-center" src="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
         <ion-card-header>
 
@@ -93,7 +93,7 @@
                 </p>
               </div>
               <div *ngIf="content.type == 'video' ">
-                <iframe id="video" [src]="transform(content.data)"></iframe>
+                <iframe id="video" src="transform(content.data)"></iframe>
               </div>
               <div *ngIf="content.type == 'button' " id="div-button">
                 <ion-button href=" {{content.data }} ">{{content.text}}</ion-button>
@@ -116,11 +116,11 @@
     <ion-row>
 
       <ion-col>
-        <img [src]="{{url}}/{{datos.folder}}/images/{{datos.school_icon}}" *ngIf="datos.school_icon != ''">
+        <img src="{{url}}/{{datos.folder}}/images/{{datos.school_icon}}" *ngIf="datos.school_icon != ''">
       </ion-col>
       <ion-col>
         <ion-row>
-          <img [src]="{{url}}/{{datos.folder}}/images/{{datos.department_icon}}" *ngIf="datos.department_icon != ''">
+          <img src="{{url}}/{{datos.folder}}/images/{{datos.department_icon}}" *ngIf="datos.department_icon != ''">
         </ion-row>
         <ion-row>
           <img src="{{url}}/images/logo-uhu.png" style="padding-top:20px;">

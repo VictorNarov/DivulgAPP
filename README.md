@@ -3,11 +3,11 @@
 </p>
 
 # DivulgAPP
-En este repositorio se ha desarrollado la aplicación android DivulgAPP con el objetivo de dar a conocer, de la forma más cómoda, los diversos grupos de investigación de la universidad de Huelva. En esencia, DivulgAPP es una aplicación que genera contenido de forma dinámica en función de archivos JSON alojados en un servidor, permitiendo así la gestión de su contenido para todo el mundo sin necesidad de modificar la aplicación.  
+En este repositorio se ha desarrollado la aplicación híbrida multidispositivo DivulgAPP con el objetivo de dar a conocer, de la forma más cómoda, los diversos grupos de investigación de la universidad de Huelva. En esencia, DivulgAPP es una aplicación que genera contenido de forma dinámica en función de archivos JSON alojados en un servidor, permitiendo así la gestión de su contenido sin necesidad de modificar el código fuente de la aplicación.  
   
 En su desarrollo se ha contactado con el grupo de investigación Sistemas de Visión, Predicción, Optimización y Control de la universidad de Huelva para la recolección de datos y el desarrollo inicial.
 
-# Lenguaje de programación
+# Lenguajes de programación
 - [Ionic](https://ionicframework.com/)
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/default.asp)

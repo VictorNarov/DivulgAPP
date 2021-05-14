@@ -13,7 +13,7 @@ import { SlicePipe } from '@angular/common';
 export class IndexPage implements OnInit {
   appstate$: Observable<object>;
   data: JSON[] = [];
-  url: string = "https://www.divulgapp.tk"
+  url: string = "https://divulgapp.tk"
 
   constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer) {
 

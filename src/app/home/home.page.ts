@@ -77,7 +77,7 @@ export class HomePage {
   }
 
   onResize(event) {
-  console.log("Hola")
+  //console.log("Hola")
 }
 }
 

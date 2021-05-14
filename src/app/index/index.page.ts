@@ -50,13 +50,13 @@ export class IndexPage implements OnInit {
   }
 
   getData(directories){
-    console.log(directories.data)
+    //console.log(directories.data)
     for(let i in directories.data){
       let directory = directories.data[i]
-      console.log(directory)
+      //console.log(directory)
       this.http.get(this.url+"/"+directory+"/"+directory+".json").subscribe((res: JSON) => {
         this.data.push(res);
-        console.log(this.data);
+        //console.log(this.data);
       });
 
       

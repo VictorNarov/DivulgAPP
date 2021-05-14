@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\OneDrive\OneDrive - UNIVERSIDAD DE HUELVA\DatosApp\DivulgAPP\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\igor_\Desktop\Aplicacion concurso\DivulgAPP\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -85,7 +85,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n");
 
 /***/ }),
 
@@ -410,6 +410,10 @@ const routes = [
     {
         path: 'index',
         loadChildren: () => __webpack_require__.e(/*! import() | index-index-module */ "index-index-module").then(__webpack_require__.bind(null, /*! ./index/index.module */ "rSti")).then(m => m.IndexPageModule)
+    },
+    {
+        path: 'about',
+        loadChildren: () => __webpack_require__.e(/*! import() | about-about-module */ "about-about-module").then(__webpack_require__.bind(null, /*! ./about/about.module */ "FQ1g")).then(m => m.AboutPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

@@ -8,9 +8,9 @@ En este repositorio se ha desarrollado la aplicación híbrida multidispositivo 
 En su desarrollo se ha contactado con el grupo de investigación Sistemas de Visión, Predicción, Optimización y Control de la universidad de Huelva para la recolección de datos y el desarrollo inicial.
 
 <p align="center">
-  <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/about.jpg" alt="DivulgAPP" width="200px"/>
-  <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/contact.jpg" alt="DivulgAPP" width="200px"/>
   <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/home.jpg" alt="DivulgAPP" width="200px"/>
+  <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/contact.jpg" alt="DivulgAPP" width="200px"/>
+  <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/about.jpg" alt="DivulgAPP" width="200px"/>
   <img src="https://github.com/VictorNarov/DivulgAPP/blob/main/android/resources/projects.jpg" alt="DivulgAPP" width="200px"/>
 </p>
 

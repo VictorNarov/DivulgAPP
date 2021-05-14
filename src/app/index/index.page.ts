@@ -45,7 +45,7 @@ export class IndexPage implements OnInit {
 
   ionViewDidEnter(){
     if(document.getElementById('footer').getBoundingClientRect().y < window.innerHeight-200){
-      setTimeout(() => { document.getElementById('footer').style.marginTop ="calc("+(window.innerHeight - document.getElementById('footer').getBoundingClientRect().y) + "px - 3rem)"; }, 200); 
+      setTimeout(() => { document.getElementById('footer').style.marginTop ="calc("+(window.innerHeight - document.getElementById('footer').getBoundingClientRect().y) + "px - 3rem)"; }, 400); 
     }
   }
 

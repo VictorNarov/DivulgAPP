@@ -60,6 +60,12 @@ export class HomePage {
     }
   }
 
+  ionViewDidEnter(){
+    if(document.getElementById('footer-home').getBoundingClientRect().y < window.innerHeight){
+      setTimeout(() => { document.getElementById('footer-home').style.marginTop ="calc("+(window.innerHeight - document.getElementById('footer-home').getBoundingClientRect().y) + "px - 3rem)"; }, 400); 
+    }
+  }
+
 
   visibility(id){
     if(document.getElementById(id).style.visibility == "hidden"){

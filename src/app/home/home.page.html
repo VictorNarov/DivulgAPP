@@ -35,7 +35,7 @@
 
 
   <ion-card *ngFor="let dato of datos.Home" (click)="navigate(dato.url, dato.data)">
-    <img class="img-center" src="../assets/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+    <img class="img-center" src="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
     <ion-card-header *ngIf="dato.image == '' && dato.url != ''">
       <ion-card-title class="card_title">
@@ -56,7 +56,7 @@
     <!-- LINEAS DE INVESTIGACION (DESPLEGABLE) -->
     <div *ngIf="dato.url == ''">
       <div (click)="visibility(dato.title)">
-        <img class="img-center" src="../assets/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
+        <img class="img-center" src="{{url}}/{{datos.folder}}/images/{{ dato.image }}" *ngIf="dato.image != ''" />
 
         <ion-card-header>
 

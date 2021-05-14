@@ -131,14 +131,14 @@
                     "description": "Especialista en visión por computador y deep learning",
                     "phone_number": "000000000",
                     "email": "correo@uhu.es",
-                    "image": "1.jpg"
+                    "image": ""
                 },
                 {
                     "name": "Persona dos",
                     "description": "Especialista en visión por computador y deep learning",
                     "phone_number": "111111111",
                     "email": "correo@uhu.es",
-                    "image": "2.jpg"
+                    "image": ""
                 }
             ]
         },

@@ -22,14 +22,14 @@
 
   </ion-card>
 
-  <ion-card *ngIf="data.phone_number" href="tel:{{data.phone_number}}">
+  <ion-card *ngIf="data.phone_number" href="tel:{{data.phone_number}}" *ngIf="data.phone_number">
     <ion-card-header > 
       <ion-card-title id="card_title">{{data.phone_number}}</ion-card-title>
       <ion-icon name="call" size="large" class="right-icon"></ion-icon>
     </ion-card-header>
   </ion-card>
 
-  <ion-card *ngIf="data.email" href="mailto:{{data.email}}">
+  <ion-card *ngIf="data.email" href="mailto:{{data.email}}" *ngIf="data.email">
     <ion-card-header> 
       <ion-card-title id="card_title">{{data.email}}</ion-card-title>
       <ion-icon name="mail" size="large" class="right-icon"></ion-icon>

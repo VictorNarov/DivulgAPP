@@ -18,7 +18,9 @@
           <ion-row>
             <ion-item>
               <ion-avatar slot="start">
-                <img src="{{url}}/{{folder}}/images/{{miembro.image}}">
+                <img src="{{url}}/{{folder}}/images/{{miembro.image}}" *ngIf="miembro.image"> 
+                <img src="https://www.flaticon.com/svg/vstatic/svg/860/860784.svg?token=exp=1620992236~hmac=ca97d4049fc1ce538fd16420a5c579df" *ngIf="!miembro.image"> 
+                
               </ion-avatar>
 
               <ion-label text-wrap>
@@ -30,13 +32,13 @@
           
           <ion-row class="contact-row">
             <ion-col>
-              <ion-button  href="mailto:{{miembro.email}}">
+              <ion-button  href="mailto:{{miembro.email}}" *ngIf="miembro.email">
                 <ion-icon name="mail"></ion-icon>
                 <a class="button-text">Enviar email</a>
               </ion-button>
             </ion-col>
             <ion-col>
-              <ion-button href="tel:{{miembro.phone_number}}">
+              <ion-button href="tel:{{miembro.phone_number}}" *ngIf="miembro.phone_number">
                 <ion-icon name="call" ></ion-icon>
                 <a class="button-text">Llamar</a>
               </ion-button>

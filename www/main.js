@@ -59,7 +59,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AppComponent = class AppComponent {
-    constructor() { }
+    constructor() {
+        this.rootPage = 'index';
+    }
 };
 AppComponent.ctorParameters = () => [];
 AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -390,7 +392,7 @@ const routes = [
     },
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'index',
         pathMatch: 'full'
     },
     {
@@ -404,6 +406,10 @@ const routes = [
     {
         path: 'projects',
         loadChildren: () => __webpack_require__.e(/*! import() | projects-projects-module */ "projects-projects-module").then(__webpack_require__.bind(null, /*! ./projects/projects.module */ "Wm2z")).then(m => m.ProjectsPageModule)
+    },
+    {
+        path: 'index',
+        loadChildren: () => __webpack_require__.e(/*! import() | index-index-module */ "index-index-module").then(__webpack_require__.bind(null, /*! ./index/index.module */ "rSti")).then(m => m.IndexPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

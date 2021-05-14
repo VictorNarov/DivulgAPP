@@ -47,16 +47,17 @@ export class HomePage {
   // }
 
   navigate(page, dataP) {
-
-    let navigationExtras: NavigationExtras = {
-      queryParams: {
-        data: dataP,
-        folder: this.datos.folder
-      }
-    };
-    this.router.navigate([page], { 
-      state: { goToMembers:  navigationExtras}
-    });
+    if(page != ""){
+      let navigationExtras: NavigationExtras = {
+        queryParams: {
+          data: dataP,
+          folder: this.datos.folder
+        }
+      };
+      this.router.navigate([page], { 
+        state: { goToMembers:  navigationExtras}
+      });
+    }
   }
 
 

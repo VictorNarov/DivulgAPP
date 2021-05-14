@@ -13,6 +13,8 @@ import { SlicePipe } from '@angular/common';
 export class IndexPage implements OnInit {
   appstate$: Observable<object>;
   data: JSON[] = [];
+  url: string = "http://www.divulgapp.tk"
+
   constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer) {
 
   }
@@ -36,7 +38,7 @@ export class IndexPage implements OnInit {
   }
   getDirectories(){
     return this.http
-    .get("assets/index.json")
+    .get(this.url+"/index.json")
   }
 
 
@@ -52,7 +54,7 @@ export class IndexPage implements OnInit {
     for(let i in directories.data){
       let directory = directories.data[i]
       console.log(directory)
-      this.http.get("assets/"+directory+"/"+directory+".json").subscribe((res: JSON) => {
+      this.http.get(this.url+"/"+directory+"/"+directory+".json").subscribe((res: JSON) => {
         this.data.push(res);
         console.log(this.data);
       });

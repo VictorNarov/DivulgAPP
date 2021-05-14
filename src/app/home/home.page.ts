@@ -13,6 +13,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class HomePage {
   appstate$: Observable<object>;
   datos: any;
+  url: string = "http://www.divulgapp.tk"
 
   constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer) {
     
@@ -40,10 +41,10 @@ export class HomePage {
   }
 
 
-  getData(){
-    return this.http
-    .get("assets/group_info_(json)/info.json")
-  }
+  // getData(){
+  //   return this.http
+  //   .get("assets/group_info_(json)/info.json")
+  // }
 
   navigate(page, dataP) {
 

@@ -15,6 +15,7 @@ export class ContactPage implements OnInit {
    data: any
    folder: string
    map: Map
+   url: string = "http://www.divulgapp.tk"
 
 
   constructor(public route: ActivatedRoute,private router: Router) {

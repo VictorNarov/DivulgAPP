@@ -10,6 +10,7 @@ export class MembersPage implements OnInit {
 
   data: any;
   folder: string
+  url: string = "http://www.divulgapp.tk"
 
   constructor(public route: ActivatedRoute,private router: Router) {
     this.data = this.router.getCurrentNavigation().extras.state.goToMembers.queryParams.data;

@@ -1,0 +1,167 @@
+{
+    "folder" : "PLANTILLA",
+    "group_name": "Grupo de ejemplo",
+    "group_description": "Descripción del grupo de ejemplo. El grupo se dedica a servir como plantilla para poder crear otros ficheros de grupos de investigación",
+    "group_code": "TEP-000",
+    "group_icon": "",
+    "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
+    "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
+    "department_icon": "",
+    "School name": "Escuela técnica superior de ingeniería",
+    "School description": "",
+    "school_icon": "",
+    "University name": "Universidad de Huelva",
+    "University description": "",
+    "university_icon": "logo-uhu.png",
+    "Home": [
+        {
+            "title": "Líneas de investigación",
+            "visible": true,
+            "image": "",
+            "url": "",
+            "icon": "rocket",
+            "data": [
+                {
+                    "image": "",
+                    "title": "Detección de fallos en sistemas dinámicos",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas automáticos que detecten posibles fallos de funcionamiento en sistemas industriales.",
+                                 "Se investiga la posibilidad de utilizar tanto modelos de los sistemas tratados, como históricos de datos pasados de dichos sistemas.",
+                                 "La detección de fallo es un primer paso para la diagnosis concreta del fallo que se ha producido.",
+                                 "Los fallos también se pueden ver como falta de coherencia o consistencia en un sistema."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "",
+                    "title": "Diseño y desarrollo de sistemas de automatización y control",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas automáticos de control aplicables principalmente en la industria.",
+                                "Se investiga la posibilidad de utilizar tanto sistemas clásicos de control, como aquellos basados en modelo, así como ",
+                                "sistemas de control para procesos industriales de tipo discreto. El grupo también desarrolla su actividad",
+                                "en el campo del modelado y la simulación, que son tareas importantes en el desarrollo de sistemas de control."
+                            ]
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "title": "Trabajos más relevantes",
+            "visible": true,
+            "image": "",
+            "url": "/projects",
+            "icon": "newspaper",
+            "data": [
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Agrobot",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tenía como objetivo la implementación de un dispositivo portátil para el reconocimiento de la madurez de fresas a partir de la captura de imágenes y derivó en la concesión de una patente de invención.",
+                                "El dispositivo patentado ha sido implementado en los prototipos de cosechadoras de fresas de Agrobot S.L. y se encuentra en explotación por parte de esta empresa."
+                            ]
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://www.youtube.com/embed/NM9Op5RKbhk"
+                        },
+                        {
+                            "type": "text",
+                            "data": [
+                                "Mediante el análisis de imágenes en tiempo real, el dispositivo localiza de forma precisa las fresas presentes mediante la extracción de características propias del fruto (forma, color, tamaño,...) y determina su grado de madurez mediante un análisis basado en color. Todo este proceso se hace de forma paralela e independiente en cada una de las cámaras situadas en los brazos del sistema robótico."
+                            ]
+                        },
+                        {
+                            "type":"button",
+                            "data":"https://doi.org/10.1016/j.compag.2020.105736",
+                            "text":"Ver artículo"
+                        }
+                    ]
+                },
+                {
+                    "image": "torrent-closures.jpg",
+                    "title": "Sistema de visión artificial para el control de la calidad de impresión industrial en imágenes (Torrent Closures S.L.)",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tiene como objetivo el desarrollo e implementación de un sistema de visión para el control de la calidad de un proceso de impresión sobre láminas metálicas.",
+                                "De forma específica, se realizan las siguientes actuaciones:",
+                                "1. Establecimiento de requisitos y especificaciones técnicas del sistema de visión: cámaras, fuente de iluminación, hardware.",
+                                "2. Implementación del proceso de comunicación cámara-ordenador para la generación de las imágenes a analizar.",
+                                "3. Implementación de algoritmos de visión que permitan establecer la calidad de las impresiones.",
+                                "4. Realización de una interfaz de usuario para la utilización del sistema."
+                                    ]
+
+                        },
+                        {
+                            "type":"image",
+                            "data":"torrent-closures-2.jpg"
+
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://docs.google.com/file/d/17r0wvZOgGAWq8RUOgqyd8TOFnVtSy5Ut/preview"
+
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "title": "Miembros y contacto",
+            "visible": true,
+            "image": "",
+            "icon": "people",
+            "url": "/members",
+            "data": [
+                {
+                    "name": "Persona Uno",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "000000000",
+                    "email": "correo@uhu.es",
+                    "image": ""
+                },
+                {
+                    "name": "Persona dos",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "111111111",
+                    "email": "correo@uhu.es",
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "title": "Encuéntranos",
+            "visible": true,
+            "image": "",
+            "icon": "location",
+            "url": "contact",
+            "data": {
+                "address": [
+                    "Despacho 1, Módulo 3, Planta 3, Departamento de ciencias integradas",
+                    "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)",
+                    "Avda. 3 de marzo s/n, 21071 - Huelva"
+                ],
+                "phone_number": " (+34) 959219931",
+                "email": "gegundez@uhu.es",
+                "map": {
+                    "visible": true,
+                    "lat": "37.271080",
+                    "lon": "-6.925962"
+                }
+            }
+        }
+    ]
+}

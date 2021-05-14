@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Acerca de</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="card_title">DatosAPP v1.0</ion-card-title>
+      <ion-icon name="information-circle" size="large" class="left-icon"></ion-icon>
+    </ion-card-header>
+    <hr>
+    <div class="description">
+      <p id="group_description">
+        Esta aplicación sirve como herramienta para que los diferentes grupos de investigación de la Universidad de Huelva
+        se puedan dar a conocer mostrando su trabajo y ofreciendo la posibilidad de contactar con ellos.
+      </p>
+      <p id="group_description">
+        La aplicación es híbrida y multidispositivo y además, el contenido de la misma es cargado dinámicamente desde un servidor externo, por lo que
+        se pueden añadir nuevos grupos o editar los existentes sin necesidad de lanzar una nueva versión de la aplicación.
+      </p>
+      <p id="group_description">
+        Aplicación desarrollada por dos estudiantes de Ingeniería Informática de la Universidad de Huelva, para el concurso Ciencia UHU APP.
+      </p>
+      <p id="group_description">
+        Versión inicial v1.0 susceptible a fallos.
+      </p>
+    </div>
+  </ion-card>
+
+  <ion-list inset=true>
+    
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="{{url}}/images/user.png">
+              </ion-avatar>
+
+              <ion-label text-wrap>
+                <h2>Víctor M. Rodríguez</h2>
+                <h3>Estudiante Ing. Informática Universidad de Huelva</h3>
+              </ion-label>
+            </ion-item>
+          </ion-row>
+          
+          <ion-row class="contact-row">
+            <ion-col>
+              <ion-button href="mailto:victornarov@gmail.com">
+                <ion-icon name="mail"></ion-icon>
+                <a class="button-text">Enviar email</a>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        
+        </ion-grid>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="{{url}}/images/user.png">
+              </ion-avatar>
+
+              <ion-label text-wrap>
+                <h2>Ihar Myshkevich</h2>
+                <h3>Estudiante Ing. Informática Universidad de Huelva</h3>
+              </ion-label>
+            </ion-item>
+          </ion-row>
+          
+          <ion-row class="contact-row">
+            <ion-col>
+              <ion-button  href="mailto:ih.myshkevich@gmail.com">
+                <ion-icon name="mail"></ion-icon>
+                <a class="button-text">Enviar email</a>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        
+        </ion-grid>
+      </ion-item>
+   
+  </ion-list>
+
+</ion-content>

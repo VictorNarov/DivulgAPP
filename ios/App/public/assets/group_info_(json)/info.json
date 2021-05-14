@@ -1,0 +1,282 @@
+{
+    "group_name": "Sistemas de Visión, Predicción, Optimización y Control",
+    "group_description": "El grupo de investicación Sistemas de Visión, Predicción, Optimización y Control, tambien conocido como TEP-952, está centrado en proyectos de investigación de áreas como control automático, modelado, identificación y predicción, detección de fallos y diagnosis, así como en procesamiento digital de imágenes. En los ultimos años, este grupo ha desarrollado sistema de visión artificial en diversos campos.",
+    "group_code": "TEP-952",
+    "group_icon": "",
+    "Department name": "Departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática",
+    "Department description": "El departamento de Ingeniería Electrónica, de Sistemas Informáticos y Automática (DIESIA) imparte las asignaturas de las áreas de Ingeniería de Sistemas y Automática y Tecnología Electrónica de la Universidad de Huelva . DIESIA pertenece a la Escuela Técnica Superior de Ingeniería e imparte docencia en sus dos Campus: La Rábida y El Carmen.",
+    "department_icon": "logo-diesia.png",
+    "School name": "Escuela técnica superior de ingeniería",
+    "School description": "",
+    "school_icon": "logo-etsi.png",
+    "University name": "Universidad de Huelva",
+    "University description": "",
+    "university_icon": "logo-uhu.png",
+    "Home": [
+        {
+            "title": "Líneas de investigación",
+            "visible": true,
+            "image": "",
+            "url": "",
+            "icon": "rocket",
+            "data": [
+                {
+                    "image": "",
+                    "title": "Detección de fallos en sistemas dinámicos",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas automáticos que detecten posibles fallos de funcionamiento en sistemas industriales.",
+                                 "Se investiga la posibilidad de utilizar tanto modelos de los sistemas tratados, como históricos de datos pasados de dichos sistemas.",
+                                 "La detección de fallo es un primer paso para la diagnosis concreta del fallo que se ha producido.",
+                                 "Los fallos también se pueden ver como falta de coherencia o consistencia en un sistema."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "",
+                    "title": "Diseño y desarrollo de sistemas de automatización y control",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "La línea de investigación se centra en proponer sistemas automáticos de control aplicables principalmente en la industria.",
+                                "Se investiga la posibilidad de utilizar tanto sistemas clásicos de control, como aquellos basados en modelo, así como ",
+                                "sistemas de control para procesos industriales de tipo discreto. El grupo también desarrolla su actividad",
+                                "en el campo del modelado y la simulación, que son tareas importantes en el desarrollo de sistemas de control."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "",
+                    "title": "Predicción, control y optimización de sistemas de energía renovable.",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Los sistemas de energía renovable necesitan ser viables técnica y económicamente para poder competir con las fuentes convencionales de energía.",
+                                "Una de las herramientas que permitiría alcanzar dicha capacidad es la Ingeniería de Sistemas.",
+                                "En consecuencia, diversas técnicas de predicción, control y optimización pueden aplicarse en estos sistemas en busca del objetivo mencionado."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "",
+                    "title": "Diseño y desarrollo de sistemas de estimación y predicción",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Dado un conjunto de datos de cierto sistema o proceso, la línea de investigación se centra en proponer nuevos métodos que proporcionen valores aproximados de ciertos parámetros o estados de sistemas.", 
+                                "Las principales aplicaciones de estos métodos son el modelado de sistemas y la predicción de comportamientos futuros."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image": "",
+                    "title": "Visión artificial / tratamiento digital de imágenes",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                   "El objetivo de esta línea es realizar investigación básica, desarrollo y transferencia de tecnologías relacionadas con el procesamiento digital de imágenes y vídeo.",
+                                   "Los campos de aplicación en los que esta línea juega un papel principal son muy variados: detección y diagnóstico de enfermedades a través de imágenes médicas, detección y seguimiento, automatización de procesos, control de calidad e inspección, robótica, sistemas de seguridad, identificación y reconocimiento, análisis de imágenes tomadas por satélite, etc."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Trabajos más relevantes",
+            "visible": true,
+            "image": "",
+            "url": "/projects",
+            "icon": "newspaper",
+            "data": [
+                {
+                    "image": "projects_image.jpg",
+                    "title": "Agrobot",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tenía como objetivo la implementación de un dispositivo portátil para el reconocimiento de la madurez de fresas a partir de la captura de imágenes y derivó en la concesión de una patente de invención.",
+                                "El dispositivo patentado ha sido implementado en los prototipos de cosechadoras de fresas de Agrobot S.L. y se encuentra en explotación por parte de esta empresa."
+                            ]
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://www.youtube.com/embed/NM9Op5RKbhk"
+                        },
+                        {
+                            "type": "text",
+                            "data": [
+                                "Mediante el análisis de imágenes en tiempo real, el dispositivo localiza de forma precisa las fresas presentes mediante la extracción de características propias del fruto (forma, color, tamaño,...) y determina su grado de madurez mediante un análisis basado en color. Todo este proceso se hace de forma paralela e independiente en cada una de las cámaras situadas en los brazos del sistema robótico."
+                            ]
+                        },
+                        {
+                            "type":"button",
+                            "data":"https://doi.org/10.1016/j.compag.2020.105736",
+                            "text":"Ver artículo"
+                        }
+                    ]
+                },
+                {
+                    "image": "retinopatia.jpg",
+                    "title": "Diagnóstico precoz de retinopatía diabética a partir de retinografías",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "En este trabajo, se ha implementado un prototipo de sistema automático de detección de Retinopatía Diabética. El sistema procesa retinografías, imágenes retinales de fondo de ojo, para detectar y localizar patologías asociadas con la enfermedad (microaneurismas, hemorragias y exudados). Esta tarea requiere una identificación previa de los componentes anatómicos de la retina, como son el disco óptico, la fóvea y el árbol vascular."
+                            ]
+
+                        },
+                        {
+                            "type": "text",
+                            "data": [
+                                "El diagnóstico de la enfermedad se realiza en base al número y distribución de las lesiones detectadas, según se establece en las escalas y clasificaciones internacionales propuestas por expertos y definidas en los protocolos médicos. De esta forma, el sistema puede ser utilizado por el especialista como herramienta de apoyo a la detección precoz esta enfermedad."
+                            ]
+                        },
+                        {
+                            "type":"button",
+                            "data":"https://jamanetwork.com/journals/jama/fullarticle/2588763?utm_campaign=articlePDF&utm_medium=articlePDFlink&utm_source=articlePDF&utm_content=jama.2016.17216",
+                            "text":"Ver artículo"
+                        }
+                    ]
+                },
+                {
+                    "image": "torrent-closures.jpg",
+                    "title": "Sistema de visión artificial para el control de la calidad de impresión industrial en imágenes (Torrent Closures S.L.)",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "Este trabajo tiene como objetivo el desarrollo e implementación de un sistema de visión para el control de la calidad de un proceso de impresión sobre láminas metálicas.",
+                                "De forma específica, se realizan las siguientes actuaciones:",
+                                "1. Establecimiento de requisitos y especificaciones técnicas del sistema de visión: cámaras, fuente de iluminación, hardware.",
+                                "2. Implementación del proceso de comunicación cámara-ordenador para la generación de las imágenes a analizar.",
+                                "3. Implementación de algoritmos de visión que permitan establecer la calidad de las impresiones.",
+                                "4. Realización de una interfaz de usuario para la utilización del sistema."
+                                    ]
+
+                        },
+                        {
+                            "type":"image",
+                            "data":"torrent-closures-2.jpg"
+
+                        },
+                        {
+                            "type": "video",
+                            "data": "https://docs.google.com/file/d/17r0wvZOgGAWq8RUOgqyd8TOFnVtSy5Ut/preview"
+
+                        }
+                    ]
+                },
+                {
+                    "image": "chron.jpg",
+                    "title": "Herramienta de apoyo al especialista en la valoración de la enfermedad de Crohn (Consejería de Salud).",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "El objetivo principal es el desarrollo de una herramienta informática basada en visión artificial que sirva de apoyo al especialista en la labor de revisión de imágenes capturadas por cápsula endoscópica (CE) para la valoración de la enfermedad de Crohn (EC).",
+                                "A modo de referencia, se puede citar que el tiempo medio de captura de imágenes en una prueba de CE se sitúa en unas 8 horas, con una velocidad de captura que puede oscilar entre 2 y 6 imágenes por segundo. Estos datos implican que el médico tenga que revisar por encima de las 60.000 imágenes en la valoración por CE de la EC en un paciente.",
+                                "La herramienta indicará al especialista aquellas imágenes que debería analizar por presentar indicios de lesiones compatibles con la enfermedad.",
+                                "Para ello, se utilizan técnicas de procesamiento digital de imágenes y deep learning para detectar aquellas imágenes afectadas por las lesiones ulcerosas características de la enfermedad."
+                                    ]
+
+                        }  
+                    ]
+                },
+                {
+                    "image": "autobuses.jpg",
+                    "title": "Diseño de un modelo de asignación de personal para una empresa de transporte interurbano (Damas, S.A.)",
+                    "content": [
+                        {
+                            "type": "text",
+                            "data": [
+                                "El proyecto consiste en la planificación automática de turnos de trabajo para un conjunto de conductores encargados de varias rutas de transporte en la provincia de Huelva.",
+                                "El reparto de turnos debe respetar ciertas restricciones como son un máximo de horas de trabajo por día, un número de días libres a la semana, un máximo de horas extras, etc.",
+                                "El objetivo de la optimización es encontrar un reparto lo más uniforme posible en las horas de trabajo de los conductores. El problema fue abordado con optimización entera mixta."
+                                    ]
+
+                        }  
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "title": "Miembros y contacto",
+            "visible": true,
+            "image": "",
+            "icon": "people",
+            "url": "/members",
+            "data": [
+                {
+                    "name": "Manuel Emilio Gegundez Árias",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "959219931",
+                    "email": "gegundez@uhu.es",
+                    "image": "1.jpg"
+                },
+                {
+                    "name": "Isaac Pérez Borrero",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": "959217675",
+                    "email": "isaac.perez@dci.uhu.es",
+                    "image": "2.jpg"
+                },
+                {
+                    "name": "Diego Marín Santos",
+                    "description": "Especialista en visión por computador y deep learning",
+                    "phone_number": " 959217384",
+                    "email": "diego.marin@diesia.uhu.es",
+                    "image": "3.jpg"
+                },
+                {
+                    "name": "Manuel J. Vasallo Vázquez",
+                    "description": "Especialista en optimización y control",
+                    "phone_number": "959217376",
+                    "email": "manuel.vasallo@diesia.uhu.es",
+                    "image": "4.jpg"
+                },
+                {
+                    "name": "Estefanía Cortés Ancos",
+                    "description": "Especialista en visión por computador",
+                    "phone_number": "959217642",
+                    "email": "estefania.cortes@diesia.uhu.es",
+                    "image": "5.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Encuéntranos",
+            "visible": true,
+            "image": "",
+            "icon": "location",
+            "url": "contact",
+            "data": {
+                "address": [
+                    "Despacho 1, Módulo 3, Planta 3, Departamento de ciencias integradas",
+                    "Fac. de Ciencias Experimentales, Universidad de Huelva (Campus de El Carmen)",
+                    "Avda. 3 de marzo s/n, 21071 - Huelva"
+                ],
+                "phone_number": " (+34) 959219931",
+                "email": "gegundez@uhu.es",
+                "map": {
+                    "visible": true,
+                    "lat": "37.271080",
+                    "lon": "-6.925962"
+                }
+            }
+        }
+    ]
+}

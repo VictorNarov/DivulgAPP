@@ -33,7 +33,7 @@
             </p>
           </div>
           <div *ngIf="content.type == 'video' ">
-            <iframe class="video" src="transform(content.data)" allowfullscreen></iframe>
+            <iframe class="video" [src]="transform(content.data)" allowfullscreen></iframe>
           </div>
           <div *ngIf="content.type == 'button' " class="div-button">
             <ion-button color="base-color" href=" {{content.data }} ">{{content.text}}</ion-button>

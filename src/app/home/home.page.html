@@ -116,11 +116,11 @@
     <ion-row>
 
       <ion-col>
-        <img src="{{url}}/{{datos.folder}}/images/{{datos.school_icon}}">
+        <img src="{{url}}/{{datos.folder}}/images/{{datos.school_icon}}" *ngIf="datos.school_icon != ''">
       </ion-col>
       <ion-col>
         <ion-row>
-          <img src="{{url}}/{{datos.folder}}/images/{{datos.department_icon}}">
+          <img src="{{url}}/{{datos.folder}}/images/{{datos.department_icon}}" *ngIf="datos.department_icon != ''">
         </ion-row>
         <ion-row>
           <img src="{{url}}/images/logo-uhu.png" style="padding-top:20px;">
